@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Vahan Yojana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FB0937",
+                        secondary: "#E0E5E9",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+   <nav class="bg-secondary shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      
+      <!-- ✅ Logo Section Fixed -->
+      <a href="#home" class="flex items-center space-x-3">
+        <img src="logo-02.png" alt="Logo" class="h-12 w-auto object-contain rounded-full" />
+        
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-black hover:text-primary font-medium transition">Home</a>
+        <a href="About.html" class="text-black hover:text-primary font-medium transition">About Us</a>
+        <a href="index.html#services" class="text-black hover:text-primary font-medium transition">Services</a>
+        <a href="joinus.html" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-red-600 transition">Join Us</a>
+        <a href="index.html#contact" class="text-black hover:text-primary font-medium transition">Contact Us</a>
+        <a href="#login" class="border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition">Login</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="text-black hover:text-primary">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col space-y-4">
+        <a href="index.html" class="text-black hover:text-primary font-medium">Home</a>
+        <a href="About.html" class="text-black hover:text-primary font-medium">About Us</a>
+        <a href="index.html#services" class="text-black hover:text-primary font-medium">Services</a>
+        <a href="joinus.html" class="text-black hover:text-primary font-medium">Join Us</a>
+        <a href="index.html#contact" class="text-black hover:text-primary font-medium">Contact Us</a>
+        <a href="#login" class="text-black hover:text-primary font-medium">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- Hero Section with Background Image -->
+<section
+  class="hero-b h-[500px] bg-cover bg-center flex items-center justify-center"
+
+>
+  <div class="text-center text-white max-w-4xl mx-auto px-4">
+    <!-- Your content here -->
+  </div>
+</section>
+
+
+    <!-- Why Join Us Section -->
+    <section class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-black mb-4">Why Choose Vahan Yojana?</h2>
+                <p class="text-xl text-gray-600">Join a company that values growth, innovation, and making dreams come true</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-primary text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Career Growth</h3>
+                    <p class="text-gray-600">Accelerate your career with continuous learning opportunities and clear promotion paths.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-primary text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Great Culture</h3>
+                    <p class="text-gray-600">Work in a collaborative environment that celebrates diversity and innovation.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-primary text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-gift text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Great Benefits</h3>
+                    <p class="text-gray-600">Comprehensive health insurance, flexible work options, and competitive compensation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions Section -->
+    <section id="join" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-black mb-4">Open Positions</h2>
+                <p class="text-xl text-gray-600">Find your perfect role in our growing team</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Loan Officer Position -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Loan Officer" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-money-check-alt mr-1"></i>
+                            Finance
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Senior Loan Officer</h3>
+                        <p class="text-gray-600 mb-4">Evaluate loan applications and guide customers through the approval process.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Mumbai, Maharashtra</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Finance</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Customer Service</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Credit Analysis</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Credit Analyst Position -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Credit Analyst" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-chart-bar mr-1"></i>
+                            Analytics
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Credit Risk Analyst</h3>
+                        <p class="text-gray-600 mb-4">Assess creditworthiness and manage risk for loan applications.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Delhi, NCR</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Risk Management</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Data Analysis</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Finance</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Relationship Manager Position -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+                             alt="Relationship Manager" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-users mr-1"></i>
+                            Sales
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Relationship Manager</h3>
+                        <p class="text-gray-600 mb-4">Build and maintain relationships with customers and car dealers.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Bangalore, Karnataka</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Sales</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Customer Relations</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Business Development</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loan Processing Executive -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Loan Processing" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-cogs mr-1"></i>
+                            Operations
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Loan Processing Executive</h3>
+                        <p class="text-gray-600 mb-4">Handle loan documentation and ensure smooth processing workflows.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Documentation</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Process Management</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Compliance</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Collections Manager -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Collections Manager" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-receipt mr-1"></i>
+                            Collections
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Collections Manager</h3>
+                        <p class="text-gray-600 mb-4">Manage recovery processes and maintain healthy loan portfolios.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Chennai, Tamil Nadu</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Collections</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Team Management</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Risk Management</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing Specialist -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+                             alt="Digital Marketing" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-bullhorn mr-1"></i>
+                            Marketing
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Digital Marketing Specialist</h3>
+                        <p class="text-gray-600 mb-4">Drive customer acquisition through digital marketing campaigns.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Hyderabad, Telangana</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Digital Marketing</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">SEO/SEM</span>
+                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Content Strategy</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+     <section class="py-16 bg-secondary">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-black mb-2">Apply Now</h2>
+      <p class="text-lg text-gray-600">Take the first step towards your new career</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md p-6 sm:p-8">
+      <form class="space-y-5">
+        <!-- Name -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
+          </div>
+        </div>
+
+        <!-- Email & Phone -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
+          </div>
+        </div>
+
+        <!-- Position -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Position Applied For</label>
+          <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
+            <option>Select Position</option>
+            <option>Senior Loan Officer</option>
+            <option>Credit Risk Analyst</option>
+            <option>Relationship Manager</option>
+            <option>Loan Processing Executive</option>
+            <option>Collections Manager</option>
+            <option>Digital Marketing Specialist</option>
+          </select>
+        </div>
+
+        <!-- Experience -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Experience (Years)</label>
+          <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
+            <option>Select Experience</option>
+            <option>0-1 years</option>
+            <option>1-3 years</option>
+            <option>3-5 years</option>
+            <option>5+ years</option>
+          </select>
+        </div>
+
+        <!-- Cover Letter -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Cover Letter</label>
+          <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none resize-none" placeholder="Tell us why you're interested..."></textarea>
+        </div>
+
+        <!-- Upload Resume -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Upload Resume</label>
+          <div class="border-2 border-dashed border-gray-300 rounded-md p-4 text-center hover:border-primary transition cursor-pointer">
+            <i class="fas fa-cloud-upload-alt text-2xl text-gray-400 mb-1"></i>
+            <p class="text-sm text-gray-600">Drag and drop your resume here, or <span class="text-primary font-medium">click to browse</span></p>
+            <p class="text-xs text-gray-500 mt-1">PDF, DOC, DOCX only (Max 5MB)</p>
+            <input type="file" class="hidden" accept=".pdf,.doc,.docx">
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="w-full bg-primary text-white py-2.5 rounded-md font-semibold hover:bg-red-600 transition-transform hover:scale-105">
+          <i class="fas fa-paper-plane mr-2"></i> Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-primary text-white p-2 rounded-lg">
+                            <i class="fas fa-car text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Vahan Yojana</h3>
+                            <p class="text-sm text-gray-400">Drive Your Dreams</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Making car ownership accessible and affordable for everyone across India.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>New Car Loans</li>
+                        <li>Used Car Loans</li>
+                        <li>Car Refinancing</li>
+                        <li>Loan Calculator</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>+91 1800-123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i>careers@vahanyojana.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Mumbai, Maharashtra</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Vahan Yojana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="aap.js"></script>
+  </body>
+</html>
+        
