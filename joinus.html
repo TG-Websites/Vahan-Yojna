@@ -22,50 +22,111 @@
 </head>
 <body class="bg-white">
     <!-- Navigation -->
-     <nav class="bg-secondary shadow-lg sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center py-4">
-      
-      <!-- ✅ Logo Section Fixed -->
-      <a href="#home" class="flex items-center space-x-3">
-        <img src="logo-02.png" alt="Logo" class="h-12 w-auto object-contain rounded-full" />
-        
-      </a>
+   <nav class="bg-secondary shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <!-- ✅ Logo Section Fixed -->
+          <a href="#home" class="flex items-center space-x-3">
+            <img
+              src="logo-02.png"
+              alt="Logo"
+              class="h-12 w-auto object-contain rounded-full"
+            />
+          </a>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="text-black hover:text-primary font-medium transition">Home</a>
-        <a href="About.html" class="text-black hover:text-primary font-medium transition">About Us</a>
-        <a href="index.html#service" class="text-black hover:text-primary font-medium transition">Services</a>
-        <a href="joinus.html" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-red-600 transition">Join Us</a>
-        <a href="index.html#contact" class="text-black hover:text-primary font-medium transition">Contact Us</a>
-        <a href="#login" class="border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition">Login</a>
-      </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a
+              href="index.html"
+              class="text-black hover:text-primary font-medium transition"
+              >Home</a
+            >
+            <a
+              href="About.html"
+              class="text-black hover:text-primary font-medium transition"
+              >About Us</a
+            >
+            <a
+              href="index.html#service"
+              class="text-black hover:text-primary font-medium transition"
+              >Services</a
+            >
+            <a
+              href="joinus.html"
+              class="bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-red-600 transition duration-300 ease-in-out"
+            >
+              Join Us
+            </a>
+            <a
+              href="index.html#contact"
+              class="text-black hover:text-primary font-medium transition"
+              >Contact Us</a
+            >
+            <a
+              href="login.html"
+              class="border border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+            >
+              Login
+            </a>
+          </div>
 
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button id="mobile-menu-btn" class="text-black hover:text-primary">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-black hover:text-primary">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pb-4">
-      <div class="flex flex-col space-y-4">
-        <a href="index.html" class="text-black hover:text-primary font-medium">Home</a>
-        <a href="About.html" class="text-black hover:text-primary font-medium">About Us</a>
-        <a href="index.html#service" class="text-black hover:text-primary font-medium">Services</a>
-        <a href="joinus.html" class="text-black hover:text-primary font-medium">Join Us</a>
-        <a href="index.html#contact" class="text-black hover:text-primary font-medium">Contact Us</a>
-        <a href="#login" class="text-black hover:text-primary font-medium">Login</a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="index.html"
+              class="text-black hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="About.html"
+              class="text-black hover:text-primary font-medium"
+              >About Us</a
+            >
+            <a
+              href="index.html#service"
+              class="text-black hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="joinus.html"
+              class="text-black hover:text-primary font-medium"
+              >Join Us</a
+            >
+            <a
+              href="index.html#contact"
+              class="text-black hover:text-primary font-medium"
+              >Contact Us</a
+            >
+            <a
+              href="login.html"
+              class="text-black hover:text-primary font-medium"
+              >Login</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-     </nav>
+    </nav>
     <!-- Hero Section with Background Image -->
 <section
   class="hero-b h-[500px] bg-cover bg-center flex items-center justify-center"
@@ -128,10 +189,7 @@
                         <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                              alt="Loan Officer" 
                              class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            <i class="fas fa-money-check-alt mr-1"></i>
-                            Finance
-                        </div>
+                      
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-black mb-2">Senior Loan Officer</h3>
@@ -140,11 +198,7 @@
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             <span>Mumbai, Maharashtra</span>
                         </div>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Finance</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Customer Service</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Credit Analysis</span>
-                        </div>
+                      
                         <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Apply Now
                         </button>
@@ -157,10 +211,7 @@
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                              alt="Credit Analyst" 
                              class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            <i class="fas fa-chart-bar mr-1"></i>
-                            Analytics
-                        </div>
+                      
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-black mb-2">Credit Risk Analyst</h3>
@@ -169,11 +220,7 @@
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             <span>Delhi, NCR</span>
                         </div>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Risk Management</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Data Analysis</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Finance</span>
-                        </div>
+                       
                         <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Apply Now
                         </button>
@@ -186,10 +233,7 @@
                         <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
                              alt="Relationship Manager" 
                              class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            <i class="fas fa-users mr-1"></i>
-                            Sales
-                        </div>
+                      
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-black mb-2">Relationship Manager</h3>
@@ -198,11 +242,7 @@
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             <span>Bangalore, Karnataka</span>
                         </div>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Sales</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Customer Relations</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Business Development</span>
-                        </div>
+                       
                         <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Apply Now
                         </button>
@@ -215,10 +255,7 @@
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                              alt="Loan Processing" 
                              class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            <i class="fas fa-cogs mr-1"></i>
-                            Operations
-                        </div>
+                       
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-black mb-2">Loan Processing Executive</h3>
@@ -227,11 +264,7 @@
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             <span>Pune, Maharashtra</span>
                         </div>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Documentation</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Process Management</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Compliance</span>
-                        </div>
+                       
                         <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Apply Now
                         </button>
@@ -244,10 +277,7 @@
                         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                              alt="Collections Manager" 
                              class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            <i class="fas fa-receipt mr-1"></i>
-                            Collections
-                        </div>
+                       
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-black mb-2">Collections Manager</h3>
@@ -256,11 +286,7 @@
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             <span>Chennai, Tamil Nadu</span>
                         </div>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Collections</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Team Management</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Risk Management</span>
-                        </div>
+                       
                         <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Apply Now
                         </button>
@@ -273,10 +299,7 @@
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
                              alt="Digital Marketing" 
                              class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            <i class="fas fa-bullhorn mr-1"></i>
-                            Marketing
-                        </div>
+                       
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-black mb-2">Digital Marketing Specialist</h3>
@@ -285,11 +308,7 @@
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             <span>Hyderabad, Telangana</span>
                         </div>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Digital Marketing</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">SEO/SEM</span>
-                            <span class="bg-secondary text-gray-700 px-2 py-1 rounded text-xs">Content Strategy</span>
-                        </div>
+                      
                         <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Apply Now
                         </button>
@@ -300,94 +319,181 @@
     </section>
 
     <!-- Application Form Section -->
-     <section class="py-16 bg-secondary">
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-black mb-2">Apply Now</h2>
-      <p class="text-lg text-gray-600">Take the first step towards your new career</p>
-    </div>
+    <section class="relative py-16 bg-gray-100 overflow-hidden" id="Apply">
+       
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+               
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 tracking-tight">
+                    Apply Now
+                    <span class="block text-lg font-normal text-gray-600 mt-2">Take the first step towards your new career</span>
+                </h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
 
-    <div class="bg-white rounded-xl shadow-md p-6 sm:p-8">
-      <form class="space-y-5">
-        <!-- Name -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
-            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
-            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
-          </div>
+            <!-- Form Container -->
+            <div class="relative">
+                <!-- Form Background Glow -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-gray-200/50 to-gray-300/30 rounded-2xl blur-sm"></div>
+                
+                <div class="relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 sm:p-12 border border-gray-200/50">
+                    <form class="space-y-8">
+                        <!-- Personal Information Section -->
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-user text-primary text-sm"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">Personal Information</h3>
+                            </div>
+                            
+                            <!-- Name Fields -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="group">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                        <i class="fas fa-user-circle text-primary mr-2"></i>
+                                        First Name
+                                    </label>
+                                    <input type="text" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="Enter your first name">
+                                </div>
+                                <div class="group">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                        <i class="fas fa-user-circle text-primary mr-2"></i>
+                                        Last Name
+                                    </label>
+                                    <input type="text" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="Enter your last name">
+                                </div>
+                            </div>
+
+                            <!-- Contact Fields -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="group">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                        <i class="fas fa-envelope text-primary mr-2"></i>
+                                        Email Address
+                                    </label>
+                                    <input type="email" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="your.email@example.com">
+                                </div>
+                                <div class="group">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                        <i class="fas fa-phone text-primary mr-2"></i>
+                                        Phone Number
+                                    </label>
+                                    <input type="tel" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="+91 98765 43210">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Information Section -->
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                                <div class="w-8 h-8 bg-blue-500/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-briefcase text-blue-500 text-sm"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">Professional Details</h3>
+                            </div>
+
+                            <!-- Position -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                    <i class="fas fa-user-tie text-primary mr-2"></i>
+                                    Position Applied For
+                                </label>
+                                <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 text-gray-700">
+                                    <option class="text-gray-400">Select Position</option>
+                                    <option>Senior Loan Officer</option>
+                                    <option>Credit Risk Analyst</option>
+                                    <option>Relationship Manager</option>
+                                    <option>Loan Processing Executive</option>
+                                    <option>Collections Manager</option>
+                                    <option>Digital Marketing Specialist</option>
+                                </select>
+                            </div>
+
+                            <!-- Experience -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                    <i class="fas fa-chart-line text-primary mr-2"></i>
+                                    Experience Level
+                                </label>
+                                <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 text-gray-700">
+                                    <option class="text-gray-400">Select Experience</option>
+                                    <option>0-1 years (Fresher)</option>
+                                    <option>1-3 years (Junior Level)</option>
+                                    <option>3-5 years (Mid Level)</option>
+                                    <option>5-10 years (Senior Level)</option>
+                                    <option>10+ years (Executive Level)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Additional Information Section -->
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                                <div class="w-8 h-8 bg-green-500/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-file-alt text-green-500 text-sm"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">Additional Information</h3>
+                            </div>
+
+                            <!-- Cover Letter -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                    <i class="fas fa-pen-fancy text-primary mr-2"></i>
+                                    Cover Letter
+                                </label>
+                                <textarea rows="5" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 resize-none placeholder-gray-400" placeholder="Tell us why you're the perfect fit for this role..."></textarea>
+                            </div>
+
+                            <!-- Upload Resume -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                                    <i class="fas fa-cloud-upload-alt text-primary mr-2"></i>
+                                    Upload Resume
+                                </label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-primary hover:bg-primary/5 transition-all duration-300 cursor-pointer group-hover:border-primary/50">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <i class="fas fa-cloud-upload-alt text-lg text-primary"></i>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-700 mb-1">Drag and drop your resume here</p>
+                                    <p class="text-xs text-gray-500 mb-2">or <span class="text-primary font-semibold hover:underline">click to browse files</span></p>
+                                    <div class="flex items-center justify-center space-x-3 text-xs text-gray-400">
+                                        <span class="flex items-center"><i class="fas fa-file-pdf mr-1"></i> PDF</span>
+                                        <span class="flex items-center"><i class="fas fa-file-word mr-1"></i> DOC</span>
+                                        <span>Max 2MB</span>
+                                    </div>
+                                    <input type="file" class="hidden" accept=".pdf,.doc,.docx">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-8">
+                            <button type="submit" class="w-full bg-gradient-to-r from-primary to-red-600 text-white py-4 rounded-xl font-semibold text-lg hover:from-red-600 hover:to-primary transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:ring-4 focus:ring-primary/30 flex items-center justify-center space-x-3 group">
+                                <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform duration-300"></i>
+                                <span>Submit Application</span>
+                                <div class="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin hidden group-hover:block"></div>
+                            </button>
+                            
+                            <p class="text-center text-sm text-gray-500 mt-4">
+                                <i class="fas fa-shield-alt text-green-500 mr-1"></i>
+                                Your information is secure and confidential
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Decoration -->
+            <div class="text-center mt-12">
+               
+            </div>
         </div>
-
-        <!-- Email & Phone -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
-          </div>
-        </div>
-
-        <!-- Position -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Position Applied For</label>
-          <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
-            <option>Select Position</option>
-            <option>Senior Loan Officer</option>
-            <option>Credit Risk Analyst</option>
-            <option>Relationship Manager</option>
-            <option>Loan Processing Executive</option>
-            <option>Collections Manager</option>
-            <option>Digital Marketing Specialist</option>
-          </select>
-        </div>
-
-        <!-- Experience -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Experience (Years)</label>
-          <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none">
-            <option>Select Experience</option>
-            <option>0-1 years</option>
-            <option>1-3 years</option>
-            <option>3-5 years</option>
-            <option>5+ years</option>
-          </select>
-        </div>
-
-        <!-- Cover Letter -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Cover Letter</label>
-          <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none resize-none" placeholder="Tell us why you're interested..."></textarea>
-        </div>
-
-        <!-- Upload Resume -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Upload Resume</label>
-          <div class="border-2 border-dashed border-gray-300 rounded-md p-4 text-center hover:border-primary transition cursor-pointer">
-            <i class="fas fa-cloud-upload-alt text-2xl text-gray-400 mb-1"></i>
-            <p class="text-sm text-gray-600">Drag and drop your resume here, or <span class="text-primary font-medium">click to browse</span></p>
-            <p class="text-xs text-gray-500 mt-1">PDF, DOC, DOCX only (Max 5MB)</p>
-            <input type="file" class="hidden" accept=".pdf,.doc,.docx">
-          </div>
-        </div>
-
-        <!-- Submit -->
-        <button type="submit" class="w-full bg-primary text-white py-2.5 rounded-md font-semibold hover:bg-red-600 transition-transform hover:scale-105">
-          <i class="fas fa-paper-plane mr-2"></i> Submit Application
-        </button>
-      </form>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
-  <footer class="bg-black text-white py-12" >
+        <footer class="bg-black text-white py-10" >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Logo and Description -->
@@ -407,21 +513,7 @@
                     and let us guide you towards finding the perfect ride to fuel your 
                     adventures.
                 </p>
-                <div class="flex items-center space-x-1 text-gray-300">
-                    <span class="text-sm">FOLLOW US</span>
-                    <div class="w-8 h-px bg-gray-300 mx-2"></div>
-                    <div class="flex space-x-3">
-                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                            <i class="fab fa-facebook-f text-black text-sm"></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                            <i class="fab fa-instagram text-black text-sm"></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                            <i class="fab fa-youtube text-black text-sm"></i>
-                        </a>
-                    </div>
-                </div>
+               
             </div>
 
             <!-- Company Links -->
@@ -456,7 +548,21 @@
                         <p>info@vahanyojana.com</p>
                     </div>
                 </div>
-                
+                 <div class="flex items-center space-x-1 text-gray-300  py-4">
+                    <span class="text-sm">FOLLOW US</span>
+                    <div class="w-8 h-px bg-gray-300 mx-2"></div>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <i class="fab fa-facebook-f text-black text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <i class="fab fa-instagram text-black text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <i class="fab fa-youtube text-black text-sm"></i>
+                        </a>
+                    </div>
+                </div>
               
             </div>
         </div>
@@ -466,7 +572,7 @@
             <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
         </div>
     </div>
-</footer>
+      </footer>
      <script src="aap.js"></script>
   </body>
 </html>
