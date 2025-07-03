@@ -12,346 +12,292 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#FB0937",
-              secondary: "#E0E5E9",
-            },
-          },
-        },
-      };
-    </script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primaryYellow: "#EFB11E",
+          primaryRed: "#AC1F23",
+          primaryBlue: "#1E427F",
+          primaryBlack: "#191308",
+          primaryWhite: "#F7F7FF",
+        }
+      }
+    }
+  }
+</script>
     <style></style>
   </head>
   <body class="bg-white">
     <!-- Navigation -->
-     <nav class="bg-secondary shadow-lg sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <!-- ✅ Logo Section Fixed -->
-          <a href="#home" class="flex items-center space-x-3">
-            <img
-              src="logo-02.png"
-              alt="Logo"
-              class="h-12 w-auto object-contain rounded-full"
-            />
-          </a>
+     <!-- Navbar -->
+<nav class="bg-primaryWhite shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3">
+        <img
+          src="logo-02.png"
+          alt="Logo"
+          class="h-12 w-auto object-contain"
+        />
+      </a>
 
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-6">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium transition"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium transition"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium transition"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium transition"
-            >
-              Join Us
-            </a>
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium transition"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="border border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-            >
-              Login
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-black hover:text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4">
-          <div class="flex flex-col space-y-4">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium"
-              >Join Us</a
-            >
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="text-black hover:text-primary font-medium"
-              >Login</a
-            >
-          </div>
-        </div>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Home</a>
+        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">About Us</a>
+        <a href="index.html#service" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Services</a>
+        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Join Us</a>
+        <a href="index.html#contact" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Contact Us</a>
+         <a
+  href="login.html"
+  class="border border-primaryYellow text-primaryYellow px-6 py-2 rounded-full font-semibold hover:bg-primaryYellow hover:text-primaryBlack shadow-sm transition duration-300 ease-in-out"
+>
+  Login
+</a>
       </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero-bg h-96 flex items-center justify-center">
-      <div class="text-center text-white max-w-4xl mx-auto px-4">
-        <div class="fade-in">
-          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            About <span class="text-primary">Vahan Yojana</span>
-          </h1>
-          <p class="text-xl md:text-2xl text-gray-200 mb-8">
-            Your trusted partner in making car ownership dreams come true
-          </p>
-        </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="text-primaryBlack hover:text-primaryYellow">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
       </div>
-    </section>
+    </div>
 
-    <!-- Company Overview -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="fade-in">
-            <h2 class="text-4xl font-bold text-black mb-6">
-              Empowering Dreams Through
-              <span class="text-primary">Smart Financing</span>
-            </h2>
-            <p class="text-lg text-gray-700 mb-6">
-              Founded in 2012, Vahan Yojana emerged from a simple yet powerful
-              vision: to make car ownership accessible to every Indian family.
-              What started as a small financial services company has grown into
-              one of India's most trusted automotive financing platforms.
-            </p>
-            <p class="text-lg text-gray-700 mb-6">
-              We understand that buying a car is more than just a financial
-              transaction – it's about freedom, convenience, and achieving
-              life's important milestones. That's why we've dedicated ourselves
-              to creating financing solutions that work for real people with
-              real dreams.
-            </p>
-          </div>
-          <div class="fade-in fade-in-delay">
-            <img
-              src="https://img.freepik.com/free-photo/business-people-shaking-hands-finishing-up-meeting_53876-13391.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
-              alt="Our Team"
-              class="rounded-2xl shadow-2xl w-full h-96 object-cover"
-            />
-          </div>
-        </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col space-y-4">
+        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Home</a>
+        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium">About Us</a>
+        <a href="index.html#service" class="text-primaryBlack hover:text-primaryYellow font-medium">Services</a>
+        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Join Us</a>
+        <a href="index.html#contact" class="text-primaryBlack hover:text-primaryYellow font-medium">Contact Us</a>
+        <a href="login.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Login</a>
       </div>
-    </section>
+    </div>
+  </div>
+</nav>
 
-    <!-- Statistics Section -->
-    <section class="py-20 bg-secondary">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-black mb-4">
-            Our Impact in Numbers
-          </h2>
-          <p class="text-xl text-gray-600">
-            Celebrating the trust and success of our customers across India
-          </p>
-        </div>
+<!-- Hero Section -->
+<section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 hero-parallax"></div>
+  <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+      About <span class="text-primaryYellow">Vahan Yojana</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-200">
+      Your trusted partner in making car ownership dreams come true
+    </p>
+  </div>
+</section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="text-center stats-counter">
-            <div class="bg-white p-8 rounded-2xl shadow-lg">
-              <div class="text-5xl font-bold text-primary mb-3">50,000+</div>
-              <div class="text-gray-600 font-semibold">Happy Customers</div>
-              <div class="text-sm text-gray-500 mt-2">
-                Families driving their dream cars
-              </div>
-            </div>
-          </div>
-          <div class="text-center stats-counter">
-            <div class="bg-white p-8 rounded-2xl shadow-lg">
-              <div class="text-5xl font-bold text-primary mb-3">₹500Cr+</div>
-              <div class="text-gray-600 font-semibold">Loans Disbursed</div>
-              <div class="text-sm text-gray-500 mt-2">
-                Making dreams affordable
-              </div>
-            </div>
-          </div>
-          <div class="text-center stats-counter">
-            <div class="bg-white p-8 rounded-2xl shadow-lg">
-              <div class="text-5xl font-bold text-primary mb-3">98.5%</div>
-              <div class="text-gray-600 font-semibold">
-                Customer Satisfaction
-              </div>
-              <div class="text-sm text-gray-500 mt-2">
-                Excellence in service delivery
-              </div>
-            </div>
-          </div>
-          <div class="text-center stats-counter">
-            <div class="bg-white p-8 rounded-2xl shadow-lg">
-              <div class="text-5xl font-bold text-primary mb-3">24 Hrs</div>
-              <div class="text-gray-600 font-semibold">Average Approval</div>
-              <div class="text-sm text-gray-500 mt-2">
-                Lightning-fast processing
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Leadership Team -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Title -->
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-black mb-4">Leadership Team</h2>
-          <p class="text-xl text-gray-600">
-            Meet the visionaries driving Vahan Yojana's success
-          </p>
-        </div>
 
-        <!-- Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <!-- Card 1 -->
-          <div
-            class="bg-gray-50 rounded-2xl p-6 text-center shadow hover:shadow-lg transition-all group"
-          >
-            <div class="relative w-36 h-36 mx-auto mb-4">
-              <img
-                src="https://randomuser.me/api/portraits/men/45.jpg"
-                alt="CEO"
-                class="rounded-full w-full h-full object-cover"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-black mb-1">Rajesh Kumar</h3>
-            <p class="text-primary font-semibold mb-2">
-              Chief Executive Officer
-            </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              15+ years in financial services, passionate about making finance
-              accessible to all.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="bg-gray-50 rounded-2xl p-6 text-center shadow hover:shadow-lg transition-all group"
-          >
-            <div class="relative w-36 h-36 mx-auto mb-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/32.jpg"
-                alt="CTO"
-                class="rounded-full w-full h-full object-cover"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-black mb-1">Priya Sharma</h3>
-            <p class="text-primary font-semibold mb-2">
-              Chief Technology Officer
-            </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Tech innovator with 12+ years building scalable fintech solutions.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="bg-gray-50 rounded-2xl p-6 text-center shadow hover:shadow-lg transition-all group"
-          >
-            <div class="relative w-36 h-36 mx-auto mb-4">
-              <img
-                src="https://randomuser.me/api/portraits/men/28.jpg"
-                alt="CFO"
-                class="rounded-full w-full h-full object-cover"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-black mb-1">Amit Patel</h3>
-            <p class="text-primary font-semibold mb-2">
-              Chief Financial Officer
-            </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Financial strategist with expertise in automotive lending and risk
-              management.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-20 bg-[#FF4F70]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl font-bold text-white mb-6">
-          Ready to Get Your Car Loan?
+  <!-- Company Overview -->
+<section class="py-20 bg-White">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-in">
+        <h2 class="text-4xl font-bold text-primaryBlue mb-6">
+          Empowering Dreams Through
+          <span class="text-primaryYellow">Smart Financing</span>
         </h2>
-        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Join thousands of satisfied customers who chose Vahan Yojana for their
-          car financing needs
+        <p class="text-lg text-primaryBlack mb-6">
+          Founded in 2012, Vahan Yojana emerged from a simple yet powerful vision: to make car ownership accessible to every Indian family. What started as a small financial services company has grown into one of India's most trusted automotive financing platforms.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            class="bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-          >
-            Apply Now
-          </button>
-          <button
-            class="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
-          >
-            Calculate EMI
-          </button>
+        <p class="text-lg text-primaryBlack mb-6">
+          We understand that buying a car is more than just a financial transaction – it's about freedom, convenience, and achieving life's important milestones. That's why we've dedicated ourselves to creating financing solutions that work for real people with real dreams.
+        </p>
+      </div>
+      <div class="fade-in fade-in-delay">
+        <img
+          src="https://img.freepik.com/free-photo/business-people-shaking-hands-finishing-up-meeting_53876-13391.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
+          alt="Our Team"
+          class="rounded-2xl shadow-lg w-full h-96 object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-20 bg-primaryWhite">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primaryBlue mb-4">
+        Our Impact in Numbers
+      </h2>
+      <p class="text-xl text-primaryBlack">
+        Celebrating the trust and success of our customers across India
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center stats-counter">
+        <div class="bg-white p-8 rounded-2xl shadow-md">
+          <div class="text-5xl font-bold text-primaryYellow mb-3">50,000+</div>
+          <div class="text-primaryBlack font-semibold">Happy Customers</div>
+          <div class="text-sm text-gray-500 mt-2">
+            Families driving their dream cars
+          </div>
         </div>
       </div>
-    </section>
+      <div class="text-center stats-counter">
+        <div class="bg-white p-8 rounded-2xl shadow-md ">
+          <div class="text-5xl font-bold text-primaryYellow mb-3">₹500Cr+</div>
+          <div class="text-primaryBlack font-semibold">Loans Disbursed</div>
+          <div class="text-sm text-gray-500 mt-2">
+            Making dreams affordable
+          </div>
+        </div>
+      </div>
+      <div class="text-center stats-counter">
+        <div class="bg-white p-8 rounded-2xl shadow-md ">
+          <div class="text-5xl font-bold text-primaryYellow mb-3">98.5%</div>
+          <div class="text-primaryBlack font-semibold">Customer Satisfaction</div>
+          <div class="text-sm text-gray-500 mt-2">
+            Excellence in service delivery
+          </div>
+        </div>
+      </div>
+      <div class="text-center stats-counter">
+        <div class="bg-white p-8 rounded-2xl shadow-md  ">
+          <div class="text-5xl font-bold text-primaryYellow mb-3">24 Hrs</div>
+          <div class="text-primaryBlack font-semibold">Average Approval</div>
+          <div class="text-sm text-gray-500 mt-2">
+            Lightning-fast processing
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-10">
+<!-- Leadership Team -->
+<section class="py-20 bg-White">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primaryBlue mb-4">Leadership Team</h2>
+      <p class="text-xl text-primaryBlack">
+        Meet the visionaries driving Vahan Yojana's success
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Card 1 -->
+      <div
+        class="bg-primaryWhite rounded-2xl p-6 text-center shadow-md hover:shadow-lg  transition-all group"
+      >
+        <div class="relative w-36 h-36 mx-auto mb-4">
+          <img
+            src="https://randomuser.me/api/portraits/men/45.jpg"
+            alt="CEO"
+            class="rounded-full w-full h-full object-cover"
+          />
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlack mb-1">Rajesh Kumar</h3>
+        <p class="text-primaryYellow font-semibold mb-2">
+          Chief Executive Officer
+        </p>
+        <p class="text-primaryBlack text-sm leading-relaxed">
+          15+ years in financial services, passionate about making finance accessible to all.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="bg-primaryWhite rounded-2xl p-6 text-center shadow-md hover:shadow-lg  transition-all group"
+      >
+        <div class="relative w-36 h-36 mx-auto mb-4">
+          <img
+            src="https://randomuser.me/api/portraits/women/32.jpg"
+            alt="CTO"
+            class="rounded-full w-full h-full object-cover"
+          />
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlack mb-1">Priya Sharma</h3>
+        <p class="text-primaryYellow font-semibold mb-2">
+          Chief Technology Officer
+        </p>
+        <p class="text-primaryBlack text-sm leading-relaxed">
+          Tech innovator with 12+ years building scalable fintech solutions.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="bg-primaryWhite rounded-2xl p-6 text-center shadow-md hover:shadow-lg  transition-all group"
+      >
+        <div class="relative w-36 h-36 mx-auto mb-4">
+          <img
+            src="https://randomuser.me/api/portraits/men/28.jpg"
+            alt="CFO"
+            class="rounded-full w-full h-full object-cover"
+          />
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlack mb-1">Amit Patel</h3>
+        <p class="text-primaryYellow font-semibold mb-2">
+          Chief Financial Officer
+        </p>
+        <p class="text-primaryBlack text-sm leading-relaxed">
+          Financial strategist with expertise in automotive lending and risk management.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-20 bg-primaryWhite">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold text-primaryBlue mb-6">
+      Ready to Get Your Car Loan?
+    </h2>
+    <p class="text-xl text-primaryBlack/80 mb-10 max-w-2xl mx-auto">
+      Join thousands of satisfied customers who chose Vahan Yojana for their car financing needs.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="login.html">
+        <button
+          class="bg-primaryYellow text-primaryBlack px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow"
+        >
+          Apply Now
+        </button>
+      </a>
+      <a href="index.html#calculator">
+        <button
+          class="border-2 border-primaryYellow text-primaryYellow px-8 py-3 rounded-lg font-semibold hover:bg-primaryYellow hover:text-primaryBlack transition-all duration-300 transform hover:scale-105"
+        >
+          Calculate EMI
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+ <footer class="bg-primaryBlue text-primaryWhite py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      
+
       <!-- Logo and Description -->
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
           <div class="text-4xl font-bold">
-            <span class="text-white">VY</span>
+            <span class="text-primaryYellow">VY</span>
           </div>
           <div>
-            <h3 class="text-2xl font-bold text-white">Vahan</h3>
-            <h3 class="text-2xl font-bold text-white -mt-2">Yojana</h3>
+            <h3 class="text-2xl font-bold text-primaryWhite">Vahan</h3>
+            <h3 class="text-2xl font-bold text-primaryWhite -mt-2">Yojana</h3>
           </div>
         </div>
         <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
@@ -364,34 +310,34 @@
 
       <!-- Company Links -->
       <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Company</h4>
+        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Company</h4>
         <ul class="space-y-3 text-gray-300">
-          <li><a href="About.html" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
-          <li><a href="tearm&condition.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
-          <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-          <li><a href="joinus.html" class="hover:text-white transition-colors">Join Us</a></li>
+          <li><a href="About.html" class="hover:text-primaryYellow transition-colors">About Us</a></li>
+          <li><a href="#contact" class="hover:text-primaryYellow transition-colors">Contact</a></li>
+          <li><a href="services.html" class="hover:text-primaryYellow transition-colors">Services</a></li>
+          <li><a href="tearm&condition.html" class="hover:text-primaryYellow transition-colors">Terms & Conditions</a></li>
+          <li><a href="privacy.html" class="hover:text-primaryYellow transition-colors">Privacy Policy</a></li>
+          <li><a href="joinus.html" class="hover:text-primaryYellow transition-colors">Join Us</a></li>
         </ul>
       </div>
 
       <!-- Contact Information -->
       <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Contact us</h4>
+        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Contact Us</h4>
         <div class="space-y-4 text-gray-300 max-w-sm">
           <div class="flex items-start justify-center md:justify-start space-x-3">
-            <i class="fas fa-map-marker-alt text-white mt-1"></i>
+            <i class="fas fa-map-marker-alt text-primaryYellow mt-1"></i>
             <p class="leading-relaxed">
               Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
-              30 - By Pass Cardanibagh, Anishabad, Patna(800002)
+              30 - By Pass Cardanibagh, Anishabad, Patna (800002)
             </p>
           </div>
           <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-phone text-white"></i>
+            <i class="fas fa-phone text-primaryYellow"></i>
             <p>011-6931-3444</p>
           </div>
           <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-envelope text-white"></i>
+            <i class="fas fa-envelope text-primaryYellow"></i>
             <p>info@vahanyojana.com</p>
           </div>
         </div>
@@ -403,14 +349,14 @@
             <div class="w-8 h-px bg-gray-300 mx-2"></div>
           </div>
           <div class="flex space-x-3 mt-2">
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-facebook-f text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-facebook-f text-primaryBlue text-sm"></i>
             </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-instagram text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-instagram text-primaryBlue text-sm"></i>
             </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-youtube text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-youtube text-primaryBlue text-sm"></i>
             </a>
           </div>
         </div>
@@ -418,11 +364,14 @@
     </div>
 
     <!-- Copyright -->
-    <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+    <div class="border-t border-gray-500 mt-8 pt-6 text-center">
       <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
     </div>
   </div>
 </footer>
+
+
+
     <script>
       // Mobile menu toggle
       document

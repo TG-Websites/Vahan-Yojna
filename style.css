@@ -55,6 +55,20 @@
         background-position: center;
         background-attachment: fixed;
       }
+
+.hero-parallax {
+  background-image: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url('https://img.freepik.com/free-photo/young-couple-talking-sales-person-car-showroom_1303-20443.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+
       .fade-in {
         opacity: 0;
         transform: translateY(30px);

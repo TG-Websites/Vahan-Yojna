@@ -1,391 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - Vahan Yojana | Car Loans Made Easy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#FB0937",
-                        secondary: "#E0E5E9",
-                    },
-                },
-            },
-        };
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Vahan Yojana | Car Loans Made Easy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryYellow: "#EFB11E",
+            primaryRed: "#AC1F23",
+            primaryBlue: "#1E427F",
+            primaryBlack: "#191308",
+            primaryWhite: "#F7F7FF",
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body class="bg-white">
-    <!-- Navigation -->
-    <nav class="bg-secondary shadow-lg sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <!-- ✅ Logo Section Fixed -->
-          <a href="#home" class="flex items-center space-x-3">
-            <img
-              src="logo-02.png"
-              alt="Logo"
-              class="h-12 w-auto object-contain rounded-full"
-            />
+  <!-- Navigation -->
+  <!-- Navbar -->
+  <nav class="bg-primaryWhite shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="logo-02.png" alt="Logo" class="h-12 w-auto object-contain" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Home</a>
+          <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">About Us</a>
+          <a href="index.html#service"
+            class="text-primaryBlack hover:text-primaryYellow font-medium transition">Services</a>
+          <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Join Us</a>
+          <a href="index.html#contact" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Contact
+            Us</a>
+          <a href="login.html"
+            class="border border-primaryYellow text-primaryYellow px-6 py-2 rounded-full font-semibold hover:bg-primaryYellow hover:text-primaryBlack shadow-sm transition duration-300 ease-in-out">
+            Login
           </a>
-
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-6">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium transition"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium transition"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium transition"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium transition"
-            >
-              Join Us
-            </a>
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium transition"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="border border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-            >
-              Login
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-black hover:text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4">
-          <div class="flex flex-col space-y-4">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium"
-              >Join Us</a
-            >
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="text-black hover:text-primary font-medium"
-              >Login</a
-            >
-          </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-primaryBlack hover:text-primaryYellow">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
       </div>
-    </nav>
 
-    <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  
-  <div class="absolute inset-0 z-0">
-    <img src="https://img.freepik.com/free-photo/mid-adult-manager-car-mechanic-talking-while-using-computer-auto-repair-shop_637285-7570.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
-         alt="Car Services Background" 
-         class="w-full h-full object-cover ">
-  </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col space-y-4">
+          <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Home</a>
+          <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium">About Us</a>
+          <a href="index.html#service" class="text-primaryBlack hover:text-primaryYellow font-medium">Services</a>
+          <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Join Us</a>
+          <a href="index.html#contact" class="text-primaryBlack hover:text-primaryYellow font-medium">Contact Us</a>
+          <a href="login.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-      <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+
+  <!-- Hero Section -->
+  <section class="relative h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://img.freepik.com/free-photo/mid-adult-manager-car-mechanic-talking-while-using-computer-auto-repair-shop_637285-7570.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
+        alt="Car Services Background" class="w-full h-full object-cover" />
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center text-white max-w-4xl px-4">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        About <span class="text-primaryYellow">Vahan Yojana</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-200">
+        Your trusted partner in making car ownership dreams come true
+      </p>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+      <div class="w-6 h-10 border-2 border-primaryYellow rounded-full flex justify-center">
+        <div class="w-1 h-3 bg-primaryYellow rounded-full mt-2 animate-pulse"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Detailed Services Section -->
+<section class="py-20 bg-primaryWhite">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold text-center text-primaryBlue mb-16">
+      Detailed Service Information
+    </h2>
+
+    <!-- New Car Loans Detail -->
+    <div class="mb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/3d-electric-car-building_23-2148972401.jpg"
+            alt="New Car"
+            class="rounded-xl shadow-lg w-full h-96 object-cover"
+          />
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-primaryBlue mb-6">
+            New Car Loans
+          </h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Turn your dream of owning a brand new car into reality with our comprehensive new car loan services. We
+            offer competitive interest rates, flexible tenure options, and hassle-free processing.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Loan Amount</h4>
+              <p class="text-gray-700">Up to ₹50 Lakhs</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Interest Rate</h4>
+              <p class="text-gray-700">Starting from 6.5%</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Tenure</h4>
+              <p class="text-gray-700">Up to 7 years</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Processing Time</h4>
+              <p class="text-gray-700">24-48 hours</p>
+            </div>
+          </div>
+          <a href="#">
+            <button
+              class="bg-primaryYellow text-primaryBlack px-8 py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-white transition-colors"
+            >
+              Apply Now
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Used Car Loans Detail -->
+    <div class="mb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="lg:order-2">
+          <img
+            src="https://img.freepik.com/free-photo/happy-customers-car-dealership_23-2149106166.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
+            alt="Used Car"
+            class="rounded-xl shadow-lg w-full h-96 object-cover"
+          />
+        </div>
+        <div class="lg:order-1">
+          <h3 class="text-3xl font-bold text-primaryBlue mb-6">
+            Used Car Loans
+          </h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Get the best deals on pre-owned vehicles with our used car loan services. We offer competitive rates and
+            quick processing for cars up to 5 years old.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Loan Amount</h4>
+              <p class="text-gray-700">Up to ₹30 Lakhs</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Interest Rate</h4>
+              <p class="text-gray-700">Starting from 7.5%</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Car Age</h4>
+              <p class="text-gray-700">Up to 5 years</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Financing</h4>
+              <p class="text-gray-700">Up to 80%</p>
+            </div>
+          </div>
+          <button
+            class="bg-primaryYellow text-primaryBlack px-8 py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-white transition-colors"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Refinancing Detail -->
+    <div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/man-talking-with-female-sales-person-car-show-room_1303-17113.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
+            alt="Car Refinancing"
+            class="rounded-xl shadow-lg w-full h-96 object-cover"
+          />
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-primaryBlue mb-6">
+            Car Refinancing
+          </h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Reduce your monthly EMI burden by transferring your existing car loan to us. Enjoy lower interest rates,
+            better terms, and additional top-up facilities.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">EMI Reduction</h4>
+              <p class="text-gray-700">Up to 30%</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Top-up Loan</h4>
+              <p class="text-gray-700">Available</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Processing Fee</h4>
+              <p class="text-gray-700">Minimal charges</p>
+            </div>
+            <div class="bg-white  p-4 rounded-lg shadow-sm">
+              <h4 class="font-semibold text-primaryYellow mb-2">Eligibility</h4>
+              <p class="text-gray-700">Existing car owners</p>
+            </div>
+          </div>
+          <button
+            class="bg-primaryYellow text-primaryBlack px-8 py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-white transition-colors"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-   
-    <!-- Detailed Services Section -->
-    <section class="py-20 bg-secondary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center text-black mb-16">Detailed Service Information</h2>
-            
-            <!-- New Car Loans Detail -->
-            <div class="mb-16">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img src="https://img.freepik.com/free-photo/3d-electric-car-building_23-2148972401.jpg" alt="New Car" class="rounded-xl shadow-lg w-full h-96 object-cover">
-                    </div>
-                    <div>
-                        <h3 class="text-3xl font-bold text-black mb-6">New Car Loans</h3>
-                        <p class="text-lg text-gray-700 mb-6">
-                            Turn your dream of owning a brand new car into reality with our comprehensive new car loan services. We offer competitive interest rates, flexible tenure options, and hassle-free processing.
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Loan Amount</h4>
-                                <p class="text-gray-600">Up to ₹50 Lakhs</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Interest Rate</h4>
-                                <p class="text-gray-600">Starting from 6.5%</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Tenure</h4>
-                                <p class="text-gray-600">Up to 7 years</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Processing Time</h4>
-                                <p class="text-gray-600">24-48 hours</p>
-                            </div>
-                        </div>
-                        <a href="">
-                           <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                        </a>
-                       
-                    </div>
-                </div>
-            </div>
-
-            <!-- Used Car Loans Detail -->
-            <div class="mb-16">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="lg:order-2">
-                        <img src="https://img.freepik.com/free-photo/happy-customers-car-dealership_23-2149106166.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740" alt="Used Car" class="rounded-xl shadow-lg w-full h-96 object-cover">
-                    </div>
-                    <div class="lg:order-1">
-                        <h3 class="text-3xl font-bold text-black mb-6">Used Car Loans</h3>
-                        <p class="text-lg text-gray-700 mb-6">
-                            Get the best deals on pre-owned vehicles with our used car loan services. We offer competitive rates and quick processing for cars up to 5 years old.
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Loan Amount</h4>
-                                <p class="text-gray-600">Up to ₹30 Lakhs</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Interest Rate</h4>
-                                <p class="text-gray-600">Starting from 7.5%</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Car Age</h4>
-                                <p class="text-gray-600">Up to 5 years</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Financing</h4>
-                                <p class="text-gray-600">Up to 80%</p>
-                            </div>
-                        </div>
-                        <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Car Refinancing Detail -->
-            <div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img src="https://img.freepik.com/free-photo/man-talking-with-female-sales-person-car-show-room_1303-17113.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740" alt="Car Refinancing" class="rounded-xl shadow-lg w-full h-96 object-cover">
-                    </div>
-                    <div>
-                        <h3 class="text-3xl font-bold text-black mb-6">Car Refinancing</h3>
-                        <p class="text-lg text-gray-700 mb-6">
-                            Reduce your monthly EMI burden by transferring your existing car loan to us. Enjoy lower interest rates, better terms, and additional top-up facilities.
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">EMI Reduction</h4>
-                                <p class="text-gray-600">Up to 30%</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Top-up Loan</h4>
-                                <p class="text-gray-600">Available</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Processing Fee</h4>
-                                <p class="text-gray-600">Minimal charges</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <h4 class="font-semibold text-primary mb-2">Eligibility</h4>
-                                <p class="text-gray-600">Existing car owners</p>
-                            </div>
-                        </div>
-                        <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Services -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center text-black mb-16">Additional Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center group">
-                    <div class="bg-secondary p-6 rounded-xl mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <i class="fas fa-calculator text-3xl text-primary group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-2">EMI Calculator</h3>
-                    <p class="text-gray-600">Calculate your monthly EMI instantly</p>
-                </div>
-                <div class="text-center group">
-                    <div class="bg-secondary p-6 rounded-xl mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <i class="fas fa-shield-alt text-3xl text-primary group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-2">Car Insurance</h3>
-                    <p class="text-gray-600">Comprehensive insurance solutions</p>
-                </div>
-                <div class="text-center group">
-                    <div class="bg-secondary p-6 rounded-xl mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <i class="fas fa-file-alt text-3xl text-primary group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-2">Documentation</h3>
-                    <p class="text-gray-600">Hassle-free document processing</p>
-                </div>
-                <div class="text-center group">
-                    <div class="bg-secondary p-6 rounded-xl mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <i class="fas fa-headset text-3xl text-primary group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-2">24/7 Support</h3>
-                    <p class="text-gray-600">Round-the-clock customer service</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
- <section class="py-20 bg-secondary">
+<!-- Additional Services -->
+<section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-center text-black mb-16">Our Simple Process</h2>
+    <h2 class="text-4xl font-bold text-center text-primaryBlue mb-16">
+      Additional Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center group">
+        <div
+          class="bg-primaryWhite p-6 rounded-xl mb-4  group-hover:bg-primaryYellow group-hover:border-primaryYellow transition-colors"
+        >
+          <i class="fas fa-calculator text-3xl text-primaryBlue group-hover:text-primaryBlack"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">EMI Calculator</h3>
+        <p class="text-gray-600">Calculate your monthly EMI instantly</p>
+      </div>
+      <div class="text-center group">
+        <div
+          class="bg-primaryWhite p-6 rounded-xl mb-4  group-hover:bg-primaryYellow group-hover:border-primaryYellow transition-colors"
+        >
+          <i class="fas fa-shield-alt text-3xl text-primaryBlue group-hover:text-primaryBlack"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">Car Insurance</h3>
+        <p class="text-gray-600">Comprehensive insurance solutions</p>
+      </div>
+      <div class="text-center group">
+        <div
+          class="bg-primaryWhite p-6 rounded-xl mb-4  group-hover:bg-primaryYellow group-hover:border-primaryYellow transition-colors"
+        >
+          <i class="fas fa-file-alt text-3xl text-primaryBlue group-hover:text-primaryBlack"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">Documentation</h3>
+        <p class="text-gray-600">Hassle-free document processing</p>
+      </div>
+      <div class="text-center group">
+        <div
+          class="bg-primaryWhite p-6 rounded-xl mb-4  group-hover:bg-primaryYellow group-hover:border-primaryYellow transition-colors"
+        >
+          <i class="fas fa-headset text-3xl text-primaryBlue group-hover:text-primaryBlack"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">24/7 Support</h3>
+        <p class="text-gray-600">Round-the-clock customer service</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="py-20 bg-primaryWhite">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold text-center text-primaryBlue mb-16">
+      Our Simple Process
+    </h2>
 
     <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-4">
       <!-- Step 1 -->
       <div class="text-center relative flex-1">
-        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-        <h3 class="text-xl font-bold text-black mb-2">Apply Online</h3>
+        <div
+          class="bg-primaryBlue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+          1
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">Apply Online</h3>
         <p class="text-gray-600">Fill out our simple online application form</p>
-
         <!-- Arrow -->
         <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
-          <i class="fas fa-arrow-right text-primary text-3xl"></i>
+          <i class="fas fa-arrow-right text-primaryBlue text-3xl"></i>
         </div>
       </div>
 
       <!-- Step 2 -->
       <div class="text-center relative flex-1">
-        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-        <h3 class="text-xl font-bold text-black mb-2">Document Verification</h3>
+        <div
+          class="bg-primaryBlue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+          2
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">Document Verification</h3>
         <p class="text-gray-600">Submit required documents for verification</p>
-
         <!-- Arrow -->
         <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
-          <i class="fas fa-arrow-right text-primary text-3xl"></i>
+          <i class="fas fa-arrow-right text-primaryBlue text-3xl"></i>
         </div>
       </div>
 
       <!-- Step 3 -->
       <div class="text-center relative flex-1">
-        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-        <h3 class="text-xl font-bold text-black mb-2">Quick Approval</h3>
+        <div
+          class="bg-primaryBlue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+          3
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">Quick Approval</h3>
         <p class="text-gray-600">Get approval within 24 hours</p>
-
         <!-- Arrow -->
         <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
-          <i class="fas fa-arrow-right text-primary text-3xl"></i>
+          <i class="fas fa-arrow-right text-primaryBlue text-3xl"></i>
         </div>
       </div>
 
       <!-- Step 4 -->
       <div class="text-center flex-1">
-        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
-        <h3 class="text-xl font-bold text-black mb-2">Get Your Car</h3>
+        <div
+          class="bg-primaryBlue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+          4
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-2">Get Your Car</h3>
         <p class="text-gray-600">Drive home your dream car</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CTA Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold text-primaryBlue mb-6">
+      Ready to Get Your Car Loan?
+    </h2>
+    <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+      Join thousands of satisfied customers who chose Vahan Yojana for their car financing needs.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button
+        class="bg-primaryYellow text-primaryBlack px-6 py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-white transition-colors">
+        Apply Now
+      </button>
+      <button
+        class="border-2 border-primaryYellow text-primaryYellow px-6 py-3 rounded-lg font-semibold hover:bg-primaryYellow hover:text-primaryBlack transition-colors">
+        Calculate EMI
+      </button>
+    </div>
+  </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-[#FF4F70]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Your Car Loan?</h2>
-            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Join thousands of satisfied customers who chose Vahan Yojana for their car financing needs
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                    Apply Now
-                </button>
-                <button class="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
-                    Calculate EMI
-                </button>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
- <footer class="bg-black text-white py-10">
+  <!-- Footer -->
+     <footer class="bg-primaryBlue text-primaryWhite py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      
+
       <!-- Logo and Description -->
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
           <div class="text-4xl font-bold">
-            <span class="text-white">VY</span>
+            <span class="text-primaryYellow">VY</span>
           </div>
           <div>
-            <h3 class="text-2xl font-bold text-white">Vahan</h3>
-            <h3 class="text-2xl font-bold text-white -mt-2">Yojana</h3>
+            <h3 class="text-2xl font-bold text-primaryWhite">Vahan</h3>
+            <h3 class="text-2xl font-bold text-primaryWhite -mt-2">Yojana</h3>
           </div>
         </div>
         <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
@@ -398,34 +413,34 @@
 
       <!-- Company Links -->
       <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Company</h4>
+        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Company</h4>
         <ul class="space-y-3 text-gray-300">
-          <li><a href="About.html" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
-          <li><a href="tearm&condition.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
-          <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-          <li><a href="joinus.html" class="hover:text-white transition-colors">Join Us</a></li>
+          <li><a href="About.html" class="hover:text-primaryYellow transition-colors">About Us</a></li>
+          <li><a href="#contact" class="hover:text-primaryYellow transition-colors">Contact</a></li>
+          <li><a href="services.html" class="hover:text-primaryYellow transition-colors">Services</a></li>
+          <li><a href="tearm&condition.html" class="hover:text-primaryYellow transition-colors">Terms & Conditions</a></li>
+          <li><a href="privacy.html" class="hover:text-primaryYellow transition-colors">Privacy Policy</a></li>
+          <li><a href="joinus.html" class="hover:text-primaryYellow transition-colors">Join Us</a></li>
         </ul>
       </div>
 
       <!-- Contact Information -->
       <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Contact us</h4>
+        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Contact Us</h4>
         <div class="space-y-4 text-gray-300 max-w-sm">
           <div class="flex items-start justify-center md:justify-start space-x-3">
-            <i class="fas fa-map-marker-alt text-white mt-1"></i>
+            <i class="fas fa-map-marker-alt text-primaryYellow mt-1"></i>
             <p class="leading-relaxed">
               Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
-              30 - By Pass Cardanibagh, Anishabad, Patna(800002)
+              30 - By Pass Cardanibagh, Anishabad, Patna (800002)
             </p>
           </div>
           <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-phone text-white"></i>
+            <i class="fas fa-phone text-primaryYellow"></i>
             <p>011-6931-3444</p>
           </div>
           <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-envelope text-white"></i>
+            <i class="fas fa-envelope text-primaryYellow"></i>
             <p>info@vahanyojana.com</p>
           </div>
         </div>
@@ -437,14 +452,14 @@
             <div class="w-8 h-px bg-gray-300 mx-2"></div>
           </div>
           <div class="flex space-x-3 mt-2">
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-facebook-f text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-facebook-f text-primaryBlue text-sm"></i>
             </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-instagram text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-instagram text-primaryBlue text-sm"></i>
             </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-youtube text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-youtube text-primaryBlue text-sm"></i>
             </a>
           </div>
         </div>
@@ -452,18 +467,19 @@
     </div>
 
     <!-- Copyright -->
-    <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+    <div class="border-t border-gray-500 mt-8 pt-6 text-center">
       <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
+
 </html>

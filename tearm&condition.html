@@ -10,432 +10,361 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#FB0937",
-              secondary: "#E0E5E9",
-            },
-          },
-        },
-      };
-    </script>
+      <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primaryYellow: "#EFB11E",
+          primaryRed: "#AC1F23",
+          primaryBlue: "#1E427F",
+          primaryBlack: "#191308",
+          primaryWhite: "#F7F7FF",
+        }
+      }
+    }
+  }
+</script>
   </head>
   <body class="bg-white">
     <!-- Navigation -->
-  <nav class="bg-secondary shadow-lg sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <!-- ✅ Logo Section Fixed -->
-          <a href="#home" class="flex items-center space-x-3">
-            <img
-              src="logo-02.png"
-              alt="Logo"
-              class="h-12 w-auto object-contain rounded-full"
-            />
-          </a>
+  <nav class="bg-primaryWhite shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="#home" class="flex items-center space-x-3">
+        <img
+          src="logo-02.png"
+          alt="Logo"
+          class="h-12 w-auto object-contain"
+        />
+      </a>
 
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-6">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium transition"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium transition"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium transition"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium transition"
-            >
-              Join Us
-            </a>
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium transition"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="border border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-            >
-              Login
-            </a>
-          </div>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Home</a>
+        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">About Us</a>
+        <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Services</a>
+        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Join Us</a>
+        <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Contact Us</a>
+        <a
+  href="login.html"
+  class="border border-primaryYellow text-primaryYellow px-6 py-2 rounded-full font-semibold hover:bg-primaryYellow hover:text-primaryBlack shadow-sm transition duration-300 ease-in-out"
+>
+  Login
+</a>
 
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-black hover:text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4">
-          <div class="flex flex-col space-y-4">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium"
-              >Join Us</a
-            >
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="text-black hover:text-primary font-medium"
-              >Login</a
-            >
-          </div>
-        </div>
       </div>
-    </nav>
 
-    <!-- Header Section -->
-    <section class="bg-primary text-white py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4">
-            Terms and Conditions
-          </h1>
-          <p class="text-xl text-gray-200 max-w-3xl mx-auto">
-            Please read these terms and conditions carefully before using our vehicle financing services
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Breadcrumb -->
-    <div class="bg-secondary py-4">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="flex" aria-label="Breadcrumb">
-          <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
-              <a href="index.html" class="text-gray-700 hover:text-primary">
-                <i class="fas fa-home mr-2"></i>Home
-              </a>
-            </li>
-            <li>
-              <div class="flex items-center">
-                <i class="fas fa-chevron-right text-gray-400 mx-2"></i>
-                <span class="text-primary font-medium">Terms and Conditions</span>
-              </div>
-            </li>
-          </ol>
-        </nav>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="text-primaryBlack hover:text-primaryYellow">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Last Updated -->
-        <div class="bg-secondary p-6 rounded-lg mb-8">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col space-y-4">
+        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Home</a>
+        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium">About Us</a>
+        <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium">Services</a>
+        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Join Us</a>
+        <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium">Contact Us</a>
+        <a href="login.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+   <!-- Header Section -->
+<section class="bg-primaryBlue text-primaryWhite py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Terms and Conditions</h1>
+      <p class="text-xl text-primaryWhite/80 max-w-3xl mx-auto">
+        Please read these terms and conditions carefully before using our vehicle financing services.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<div class="bg-primaryWhite py-4 border-b border-primaryBlue/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+          <a href="index.html" class="text-primaryBlue hover:text-primaryYellow font-medium">
+            <i class="fas fa-home mr-2"></i>Home
+          </a>
+        </li>
+        <li>
           <div class="flex items-center">
-            <i class="fas fa-calendar-alt text-primary mr-3"></i>
-            <span class="text-gray-700">
-              <strong>Last Updated:</strong> January 1, 2025
-            </span>
+            <i class="fas fa-chevron-right text-primaryBlue/50 mx-2"></i>
+            <span class="text-primaryYellow font-semibold">Terms and Conditions</span>
+          </div>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Main Content -->
+<section class="py-16 bg-primaryWhite">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Last Updated -->
+    <div class="bg-primaryWhite border border-primaryBlue/20 p-6 rounded-lg mb-8">
+      <div class="flex items-center">
+        <i class="fas fa-calendar-alt text-primaryYellow mr-3"></i>
+        <span class="text-primaryBlack">
+          <strong>Last Updated:</strong> January 1, 2025
+        </span>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-primaryBlue mb-6">Introduction</h2>
+      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+        Welcome to Vahan Yojana, operated by Shiksh Gravity Foundation. These Terms and Conditions ("Terms") govern your use of our vehicle financing services and website. By accessing or using our services, you agree to be bound by these Terms.
+      </p>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Please read these Terms carefully before using our services. If you do not agree with any part of these Terms, you must not use our services.
+      </p>
+    </div>
+
+    <!-- Terms Sections -->
+    <div class="space-y-12">
+
+      <!-- Section 1 -->
+      <div class="border-l-4 border-primaryYellow pl-6">
+        <h3 class="text-2xl font-bold text-primaryBlue mb-4">1. Definitions and Interpretation</h3>
+        <div class="text-gray-700 space-y-3">
+          <p><strong class="text-primaryBlack">"Company"</strong> refers to Vahan Yojana and Shiksh Gravity Foundation.</p>
+          <p><strong class="text-primaryBlack">"Services"</strong> refers to our vehicle financing, loan processing, and related services.</p>
+          <p><strong class="text-primaryBlack">"User"</strong> or "You" refers to any individual or entity using our services.</p>
+          <p><strong class="text-primaryBlack">"Agreement"</strong> refers to these Terms and Conditions along with any loan agreement executed.</p>
+          <p><strong class="text-primaryBlack">"Vehicle"</strong> refers to any automobile, motorcycle, or other motor vehicle financed through our services.</p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="border-l-4 border-primaryYellow pl-6">
+        <h3 class="text-2xl font-bold text-primaryBlue mb-4">2. Eligibility Criteria</h3>
+        <div class="text-gray-700 space-y-3">
+          <p>To be eligible for our services, you must:</p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Be at least 21 years of age and not more than 65 years at loan maturity</li>
+            <li>Be a citizen or permanent resident of India</li>
+            <li>Have a stable source of income</li>
+            <li>Provide valid identification and address proof</li>
+            <li>Have a satisfactory credit history</li>
+            <li>Meet our minimum income requirements</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="border-l-4 border-primaryYellow pl-6">
+        <h3 class="text-2xl font-bold text-primaryBlue mb-4">3. Loan Terms and Conditions</h3>
+        <div class="text-gray-700 space-y-4">
+          <div>
+            <h4 class="font-semibold text-primaryBlack mb-2">Interest Rates:</h4>
+            <p>Interest rates are subject to change and depend on various factors including credit score, loan amount, and tenure. Current rates start from 6.5% per annum.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primaryBlack mb-2">Loan Amount:</h4>
+            <p>We offer financing up to 90% of the vehicle's on-road price for new vehicles and up to 80% for used vehicles.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primaryBlack mb-2">Repayment Tenure:</h4>
+            <p>Loan tenure ranges from 1 to 7 years, depending on the type of vehicle and loan amount.</p>
           </div>
         </div>
+      </div>
 
-        <!-- Introduction -->
-        <div class="mb-12">
-          <h2 class="text-3xl font-bold text-black mb-6">Introduction</h2>
-          <p class="text-gray-700 text-lg leading-relaxed mb-4">
-            Welcome to Vahan Yojana, operated by Shiksh Gravity Foundation. These Terms and Conditions ("Terms") govern your use of our vehicle financing services and website. By accessing or using our services, you agree to be bound by these Terms.
-          </p>
-          <p class="text-gray-700 text-lg leading-relaxed">
-            Please read these Terms carefully before using our services. If you do not agree with any part of these Terms, you must not use our services.
-          </p>
+      <!-- Section 4 -->
+      <div class="border-l-4 border-primaryYellow pl-6">
+        <h3 class="text-2xl font-bold text-primaryBlue mb-4">4. Application Process and Documentation</h3>
+        <div class="text-gray-700 space-y-3">
+          <p>The loan application process requires submission of the following documents:</p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Completed loan application form</li>
+            <li>Identity proof (Aadhaar Card, PAN Card, Passport, etc.)</li>
+            <li>Address proof (Utility bills, Aadhaar Card, etc.)</li>
+            <li>Income proof (Salary slips, ITR, bank statements)</li>
+            <li>Vehicle quotation/pro forma invoice</li>
+            <li>Passport-size photographs</li>
+          </ul>
+          <p class="mt-4">All documents must be genuine and verifiable. Submission of false documents may result in immediate rejection and legal action.</p>
         </div>
+      </div>
 
-        <!-- Terms Sections -->
-        <div class="space-y-12">
-          <!-- Section 1 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              1. Definitions and Interpretation
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p><strong>"Company"</strong> refers to Vahan Yojana and Shiksh Gravity Foundation.</p>
-              <p><strong>"Services"</strong> refers to our vehicle financing, loan processing, and related services.</p>
-              <p><strong>"User"</strong> or "You" refers to any individual or entity using our services.</p>
-              <p><strong>"Agreement"</strong> refers to these Terms and Conditions along with any loan agreement executed.</p>
-              <p><strong>"Vehicle"</strong> refers to any automobile, motorcycle, or other motor vehicle financed through our services.</p>
-            </div>
-          </div>
-
-          <!-- Section 2 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              2. Eligibility Criteria
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>To be eligible for our services, you must:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Be at least 21 years of age and not more than 65 years at loan maturity</li>
-                <li>Be a citizen or permanent resident of India</li>
-                <li>Have a stable source of income</li>
-                <li>Provide valid identification and address proof</li>
-                <li>Have a satisfactory credit history</li>
-                <li>Meet our minimum income requirements</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Section 3 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              3. Loan Terms and Conditions
-            </h3>
-            <div class="text-gray-700 space-y-4">
-              <div>
-                <h4 class="font-semibold text-black mb-2">Interest Rates:</h4>
-                <p>Interest rates are subject to change and depend on various factors including credit score, loan amount, and tenure. Current rates start from 6.5% per annum.</p>
-              </div>
-              <div>
-                <h4 class="font-semibold text-black mb-2">Loan Amount:</h4>
-                <p>We offer financing up to 90% of the vehicle's on-road price for new vehicles and up to 80% for used vehicles.</p>
-              </div>
-              <div>
-                <h4 class="font-semibold text-black mb-2">Repayment Tenure:</h4>
-                <p>Loan tenure ranges from 1 to 7 years, depending on the type of vehicle and loan amount.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 4 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              4. Application Process and Documentation
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>The loan application process requires submission of the following documents:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Completed loan application form</li>
-                <li>Identity proof (Aadhaar Card, PAN Card, Passport, etc.)</li>
-                <li>Address proof (Utility bills, Aadhaar Card, etc.)</li>
-                <li>Income proof (Salary slips, ITR, bank statements)</li>
-                <li>Vehicle quotation/pro forma invoice</li>
-                <li>Passport-size photographs</li>
-              </ul>
-              <p class="mt-4">All documents must be genuine and verifiable. Submission of false documents may result in immediate rejection and legal action.</p>
-            </div>
-          </div>
-
-          <!-- Section 5 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              5. Processing Fees and Charges
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>The following fees and charges may apply:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Processing fee: Up to 2% of loan amount (minimum ₹1,000)</li>
-                <li>Documentation charges: As applicable</li>
-                <li>Prepayment charges: Nil for loans with floating interest rates</li>
-                <li>Late payment charges: 2% per month on overdue amount</li>
-                <li>Bounce charges: ₹500 per bounce</li>
-              </ul>
-            </div>
-          </div>
+      <!-- Section 5 -->
+      <div class="border-l-4 border-primaryYellow pl-6">
+        <h3 class="text-2xl font-bold text-primaryBlue mb-4">5. Processing Fees and Charges</h3>
+        <div class="text-gray-700 space-y-3">
+          <p>The following fees and charges may apply:</p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Processing fee: Up to 2% of loan amount (minimum ₹1,000)</li>
+            <li>Documentation charges: As applicable</li>
+            <li>Prepayment charges: Nil for loans with floating interest rates</li>
+            <li>Late payment charges: 2% per month on overdue amount</li>
+            <li>Bounce charges: ₹500 per bounce</li>
+          </ul>
+        </div>
+      </div>
 
           <!-- Section 6 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              6. Vehicle Insurance and Security
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>Vehicle insurance requirements:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Comprehensive insurance coverage is mandatory for the entire loan tenure</li>
-                <li>The Company must be nominated as the first loss payee in the insurance policy</li>
-                <li>Insurance must be renewed annually without any lapse</li>
-                <li>Original insurance documents must be submitted to the Company</li>
-              </ul>
-            </div>
-          </div>
+<div class="border-l-4 border-primaryYellow pl-6">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">6. Vehicle Insurance and Security</h3>
+  <div class="text-gray-700 space-y-3">
+    <p>Vehicle insurance requirements:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li>Comprehensive insurance coverage is mandatory for the entire loan tenure</li>
+      <li>The Company must be nominated as the first loss payee in the insurance policy</li>
+      <li>Insurance must be renewed annually without any lapse</li>
+      <li>Original insurance documents must be submitted to the Company</li>
+    </ul>
+  </div>
+</div>
 
-          <!-- Section 7 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              7. Default and Recovery
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>In case of default or non-payment:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Late payment charges will be levied as per the loan agreement</li>
-                <li>The Company reserves the right to recall the entire outstanding amount</li>
-                <li>Legal action may be initiated for recovery</li>
-                <li>The vehicle may be repossessed and sold to recover dues</li>
-                <li>Default information may be reported to credit bureaus</li>
-              </ul>
-            </div>
-          </div>
+<!-- Section 7 -->
+<div class="border-l-4 border-primaryYellow pl-6">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">7. Default and Recovery</h3>
+  <div class="text-gray-700 space-y-3">
+    <p>In case of default or non-payment:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li>Late payment charges will be levied as per the loan agreement</li>
+      <li>The Company reserves the right to recall the entire outstanding amount</li>
+      <li>Legal action may be initiated for recovery</li>
+      <li>The vehicle may be repossessed and sold to recover dues</li>
+      <li>Default information may be reported to credit bureaus</li>
+    </ul>
+  </div>
+</div>
 
-          <!-- Section 8 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              8. Privacy and Data Protection
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>We are committed to protecting your privacy and personal information:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Personal information is collected only for legitimate business purposes</li>
-                <li>Data is stored securely and accessed only by authorized personnel</li>
-                <li>Information may be shared with credit bureaus and regulatory authorities as required</li>
-                <li>We do not sell or rent personal information to third parties</li>
-              </ul>
-            </div>
-          </div>
+<!-- Section 8 -->
+<div class="border-l-4 border-primaryYellow pl-6">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">8. Privacy and Data Protection</h3>
+  <div class="text-gray-700 space-y-3">
+    <p>We are committed to protecting your privacy and personal information:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li>Personal information is collected only for legitimate business purposes</li>
+      <li>Data is stored securely and accessed only by authorized personnel</li>
+      <li>Information may be shared with credit bureaus and regulatory authorities as required</li>
+      <li>We do not sell or rent personal information to third parties</li>
+    </ul>
+  </div>
+</div>
 
-          <!-- Section 9 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              9. Limitation of Liability
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>The Company's liability is limited as follows:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>We are not liable for any indirect, incidental, or consequential damages</li>
-                <li>Our liability shall not exceed the amount of processing fees paid</li>
-                <li>We are not responsible for delays caused by third parties or external factors</li>
-                <li>Vehicle condition and fitness are the sole responsibility of the borrower</li>
-              </ul>
-            </div>
-          </div>
+<!-- Section 9 -->
+<div class="border-l-4 border-primaryYellow pl-6">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">9. Limitation of Liability</h3>
+  <div class="text-gray-700 space-y-3">
+    <p>The Company's liability is limited as follows:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li>We are not liable for any indirect, incidental, or consequential damages</li>
+      <li>Our liability shall not exceed the amount of processing fees paid</li>
+      <li>We are not responsible for delays caused by third parties or external factors</li>
+      <li>Vehicle condition and fitness are the sole responsibility of the borrower</li>
+    </ul>
+  </div>
+</div>
 
-          <!-- Section 10 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              10. Governing Law and Jurisdiction
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>These Terms are governed by:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>The laws of India</li>
-                <li>Courts in New Delhi shall have exclusive jurisdiction</li>
-                <li>Any disputes shall be resolved through arbitration as per Indian Arbitration Act</li>
-                <li>The arbitration shall be conducted in English language</li>
-              </ul>
-            </div>
-          </div>
+<!-- Section 10 -->
+<div class="border-l-4 border-primaryYellow pl-6">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">10. Governing Law and Jurisdiction</h3>
+  <div class="text-gray-700 space-y-3">
+    <p>These Terms are governed by:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li>The laws of India</li>
+      <li>Courts in New Delhi shall have exclusive jurisdiction</li>
+      <li>Any disputes shall be resolved through arbitration as per Indian Arbitration Act</li>
+      <li>The arbitration shall be conducted in English language</li>
+    </ul>
+  </div>
+</div>
 
-          <!-- Section 11 -->
-          <div class="border-l-4 border-primary pl-6">
-            <h3 class="text-2xl font-bold text-black mb-4">
-              11. Amendments and Updates
-            </h3>
-            <div class="text-gray-700 space-y-3">
-              <p>The Company reserves the right to modify these Terms at any time:</p>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Changes will be communicated through our website or registered email</li>
-                <li>Continued use of services constitutes acceptance of modified terms</li>
-                <li>Material changes will be notified with reasonable advance notice</li>
-                <li>Users may terminate services if they disagree with modifications</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<!-- Section 11 -->
+<div class="border-l-4 border-primaryYellow pl-6">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">11. Amendments and Updates</h3>
+  <div class="text-gray-700 space-y-3">
+    <p>The Company reserves the right to modify these Terms at any time:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li>Changes will be communicated through our website or registered email</li>
+      <li>Continued use of services constitutes acceptance of modified terms</li>
+      <li>Material changes will be notified with reasonable advance notice</li>
+      <li>Users may terminate services if they disagree with modifications</li>
+    </ul>
+  </div>
+</div>
 
-        <!-- Contact Information -->
-        <div class="bg-secondary p-8 rounded-lg mt-12">
-          <h3 class="text-2xl font-bold text-black mb-4">
-            <i class="fas fa-phone text-primary mr-3"></i>
-            Contact Information
-          </h3>
-          <p class="text-gray-700 mb-4">
-            For any questions or concerns regarding these Terms and Conditions, please contact us:
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-semibold text-black mb-2">Address:</h4>
-              <p class="text-gray-700">
-                Santswarup Complex / 2nd floor,<br>
-                Near Bank of Maharashtra,<br>
-                NH 30 - By Pass Cardanibagh,<br>
-                Anishabad, Patna - 800002
-              </p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-black mb-2">Contact Details:</h4>
-              <p class="text-gray-700">
-                <i class="fas fa-phone text-primary mr-2"></i>011-6931-3444<br>
-                <i class="fas fa-envelope text-primary mr-2"></i>info@vahanyojana.com<br>
-                <i class="fas fa-clock text-primary mr-2"></i>Mon-Fri: 9:00 AM - 6:00 PM
-              </p>
-            </div>
-          </div>
-        </div>
+<!-- Contact Information -->
+<div class="bg-primaryWhite border border-primaryBlue/20 p-8 rounded-lg mt-12">
+  <h3 class="text-2xl font-bold text-primaryBlue mb-4">
+    <i class="fas fa-phone text-primaryYellow mr-3"></i>
+    Contact Information
+  </h3>
+  <p class="text-gray-700 mb-4">
+    For any questions or concerns regarding these Terms and Conditions, please contact us:
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h4 class="font-semibold text-primaryBlack mb-2">Address:</h4>
+      <p class="text-gray-700">
+        Santswarup Complex / 2nd floor,<br>
+        Near Bank of Maharashtra,<br>
+        NH 30 - By Pass Cardanibagh,<br>
+        Anishabad, Patna - 800002
+      </p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-primaryBlack mb-2">Contact Details:</h4>
+      <p class="text-gray-700">
+        <i class="fas fa-phone text-primaryYellow mr-2"></i>011-6931-3444<br>
+        <i class="fas fa-envelope text-primaryYellow mr-2"></i>info@vahanyojana.com<br>
+        <i class="fas fa-clock text-primaryYellow mr-2"></i>Mon-Fri: 9:00 AM - 6:00 PM
+      </p>
+    </div>
+  </div>
+</div>
 
-        <!-- Acknowledgment Section -->
-        <div class="bg-white border-2 border-primary rounded-lg p-8 mt-8">
-          <h3 class="text-2xl font-bold text-primary mb-4">
-            <i class="fas fa-check-circle mr-3"></i>
-            Acknowledgment
-          </h3>
-          <p class="text-gray-700 text-lg leading-relaxed">
-            By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. These Terms constitute a legally binding agreement between you and Vahan Yojana (Shiksh Gravity Foundation).
-          </p>
+<!-- Acknowledgment Section -->
+<div class="bg-primaryWhite border-2 border-primaryYellow rounded-lg p-8 mt-8">
+  <h3 class="text-2xl font-bold text-primaryYellow mb-4">
+    <i class="fas fa-check-circle mr-3"></i>
+    Acknowledgment
+  </h3>
+  <p class="text-gray-700 text-lg leading-relaxed">
+    By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. These Terms constitute a legally binding agreement between you and Vahan Yojana (Shiksh Gravity Foundation).
+  </p>
+</div>
+</p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-10">
+  <footer class="bg-primaryBlue text-primaryWhite py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      
+
       <!-- Logo and Description -->
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
           <div class="text-4xl font-bold">
-            <span class="text-white">VY</span>
+            <span class="text-primaryYellow">VY</span>
           </div>
           <div>
-            <h3 class="text-2xl font-bold text-white">Vahan</h3>
-            <h3 class="text-2xl font-bold text-white -mt-2">Yojana</h3>
+            <h3 class="text-2xl font-bold text-primaryWhite">Vahan</h3>
+            <h3 class="text-2xl font-bold text-primaryWhite -mt-2">Yojana</h3>
           </div>
         </div>
         <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
@@ -448,34 +377,34 @@
 
       <!-- Company Links -->
       <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Company</h4>
+        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Company</h4>
         <ul class="space-y-3 text-gray-300">
-          <li><a href="About.html" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
-          <li><a href="tearm&condition.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
-          <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-          <li><a href="joinus.html" class="hover:text-white transition-colors">Join Us</a></li>
+          <li><a href="About.html" class="hover:text-primaryYellow transition-colors">About Us</a></li>
+          <li><a href="#contact" class="hover:text-primaryYellow transition-colors">Contact</a></li>
+          <li><a href="services.html" class="hover:text-primaryYellow transition-colors">Services</a></li>
+          <li><a href="tearm&condition.html" class="hover:text-primaryYellow transition-colors">Terms & Conditions</a></li>
+          <li><a href="privacy.html" class="hover:text-primaryYellow transition-colors">Privacy Policy</a></li>
+          <li><a href="joinus.html" class="hover:text-primaryYellow transition-colors">Join Us</a></li>
         </ul>
       </div>
 
       <!-- Contact Information -->
       <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Contact us</h4>
+        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Contact Us</h4>
         <div class="space-y-4 text-gray-300 max-w-sm">
           <div class="flex items-start justify-center md:justify-start space-x-3">
-            <i class="fas fa-map-marker-alt text-white mt-1"></i>
+            <i class="fas fa-map-marker-alt text-primaryYellow mt-1"></i>
             <p class="leading-relaxed">
               Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
-              30 - By Pass Cardanibagh, Anishabad, Patna(800002)
+              30 - By Pass Cardanibagh, Anishabad, Patna (800002)
             </p>
           </div>
           <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-phone text-white"></i>
+            <i class="fas fa-phone text-primaryYellow"></i>
             <p>011-6931-3444</p>
           </div>
           <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-envelope text-white"></i>
+            <i class="fas fa-envelope text-primaryYellow"></i>
             <p>info@vahanyojana.com</p>
           </div>
         </div>
@@ -487,14 +416,14 @@
             <div class="w-8 h-px bg-gray-300 mx-2"></div>
           </div>
           <div class="flex space-x-3 mt-2">
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-facebook-f text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-facebook-f text-primaryBlue text-sm"></i>
             </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-instagram text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-instagram text-primaryBlue text-sm"></i>
             </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-youtube text-black text-sm"></i>
+            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+              <i class="fab fa-youtube text-primaryBlue text-sm"></i>
             </a>
           </div>
         </div>
@@ -502,11 +431,11 @@
     </div>
 
     <!-- Copyright -->
-    <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+    <div class="border-t border-gray-500 mt-8 pt-6 text-center">
       <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
     </div>
   </div>
-</footer>
+</footer>                       
 
     <!-- Mobile Menu Script -->
     <script>

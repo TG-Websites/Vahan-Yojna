@@ -1,583 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us - Vahan Yojana</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#FB0937",
-                        secondary: "#E0E5E9",
-                    },
-                },
-            },
-        };
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us - Vahan Yojana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+   <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primaryYellow: "#EFB11E",
+          primaryRed: "#AC1F23",
+          primaryBlue: "#1E427F",
+          primaryBlack: "#191308",
+          primaryWhite: "#F7F7FF",
+        }
+      }
+    }
+  }
+</script>
+
 </head>
+
 <body class="bg-white">
-    <!-- Navigation -->
-    <nav class="bg-secondary shadow-lg sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <!-- ✅ Logo Section Fixed -->
-          <a href="#home" class="flex items-center space-x-3">
-            <img
-              src="logo-02.png"
-              alt="Logo"
-              class="h-12 w-auto object-contain rounded-full"
-            />
-          </a>
+   <!-- Navigation -->
+ <nav class="bg-primaryWhite shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="#home" class="flex items-center space-x-3">
+        <img
+          src="logo-02.png"
+          alt="Logo"
+          class="h-12 w-auto object-contain"
+        />
+      </a>
 
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-6">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium transition"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium transition"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium transition"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium transition"
-            >
-              Join Us
-            </a>
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium transition"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="border border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-            >
-              Login
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-black hover:text-primary">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4">
-          <div class="flex flex-col space-y-4">
-            <a
-              href="index.html"
-              class="text-black hover:text-primary font-medium"
-              >Home</a
-            >
-            <a
-              href="About.html"
-              class="text-black hover:text-primary font-medium"
-              >About Us</a
-            >
-            <a
-              href="index.html#service"
-              class="text-black hover:text-primary font-medium"
-              >Services</a
-            >
-            <a
-              href="joinus.html"
-              class="text-black hover:text-primary font-medium"
-              >Join Us</a
-            >
-            <a
-              href="index.html#contact"
-              class="text-black hover:text-primary font-medium"
-              >Contact Us</a
-            >
-            <a
-              href="login.html"
-              class="text-black hover:text-primary font-medium"
-              >Login</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Hero Section with Background Image -->
-<section
-  class="hero-b h-[500px] bg-cover bg-center flex items-center justify-center"
-
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Home</a>
+        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">About Us</a>
+        <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Services</a>
+        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Join Us</a>
+        <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Contact Us</a>
+        <a
+  href="login.html"
+  class="border border-primaryYellow text-primaryYellow px-6 py-2 rounded-full font-semibold hover:bg-primaryYellow hover:text-primaryBlack shadow-sm transition duration-300 ease-in-out"
 >
-  <div class="text-center text-white max-w-4xl mx-auto px-4">
-    <!-- Your content here -->
+  Login
+</a>
+
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="text-primaryBlack hover:text-primaryYellow">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col space-y-4">
+        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Home</a>
+        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium">About Us</a>
+        <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium">Services</a>
+        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Join Us</a>
+        <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium">Contact Us</a>
+        <a href="login.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero-b h-[500px] bg-cover bg-center flex items-center justify-center">
+    <div class="text-center text-white max-w-4xl mx-auto px-4">
+      <!-- Your content here -->
+    </div>
+  </section>
+
+
+ <!-- Why Join Us Section -->
+<section class="py-16 bg-primaryWhite">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primaryBlue mb-4">Why Choose Vahan Yojana?</h2>
+      <p class="text-xl text-gray-700">
+        Join a company that values growth, innovation, and making dreams come true
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-lg shadow text-center">
+        <div class="bg-primaryBlue text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <i class="fas fa-chart-line text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-3">Career Growth</h3>
+        <p class="text-gray-600">Accelerate your career with continuous learning opportunities and clear promotion paths.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg shadow text-center">
+        <div class="bg-primaryBlue text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <i class="fas fa-handshake text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-3">Great Culture</h3>
+        <p class="text-gray-600">Work in a collaborative environment that celebrates diversity and innovation.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg shadow text-center">
+        <div class="bg-primaryBlue text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <i class="fas fa-gift text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primaryBlue mb-3">Great Benefits</h3>
+        <p class="text-gray-600">Comprehensive health insurance, flexible work options, and competitive compensation.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 
-    <!-- Why Join Us Section -->
-    <section class="py-16 bg-secondary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-black mb-4">Why Choose Vahan Yojana?</h2>
-                <p class="text-xl text-gray-600">Join a company that values growth, innovation, and making dreams come true</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
-                    <div class="bg-primary text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Career Growth</h3>
-                    <p class="text-gray-600">Accelerate your career with continuous learning opportunities and clear promotion paths.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
-                    <div class="bg-primary text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-handshake text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Great Culture</h3>
-                    <p class="text-gray-600">Work in a collaborative environment that celebrates diversity and innovation.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
-                    <div class="bg-primary text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-gift text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Great Benefits</h3>
-                    <p class="text-gray-600">Comprehensive health insurance, flexible work options, and competitive compensation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Open Positions Section -->
-    <section id="join" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-black mb-4">Open Positions</h2>
-                <p class="text-xl text-gray-600">Find your perfect role in our growing team</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Loan Officer Position -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                             alt="Loan Officer" 
-                             class="w-full h-48 object-cover">
-                      
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-black mb-2">Senior Loan Officer</h3>
-                        <p class="text-gray-600 mb-4">Evaluate loan applications and guide customers through the approval process.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            <span>Mumbai, Maharashtra</span>
-                        </div>
-                      
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Credit Analyst Position -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                             alt="Credit Analyst" 
-                             class="w-full h-48 object-cover">
-                      
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-black mb-2">Credit Risk Analyst</h3>
-                        <p class="text-gray-600 mb-4">Assess creditworthiness and manage risk for loan applications.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            <span>Delhi, NCR</span>
-                        </div>
-                       
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Relationship Manager Position -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                             alt="Relationship Manager" 
-                             class="w-full h-48 object-cover">
-                      
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-black mb-2">Relationship Manager</h3>
-                        <p class="text-gray-600 mb-4">Build and maintain relationships with customers and car dealers.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            <span>Bangalore, Karnataka</span>
-                        </div>
-                       
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Loan Processing Executive -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                             alt="Loan Processing" 
-                             class="w-full h-48 object-cover">
-                       
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-black mb-2">Loan Processing Executive</h3>
-                        <p class="text-gray-600 mb-4">Handle loan documentation and ensure smooth processing workflows.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            <span>Pune, Maharashtra</span>
-                        </div>
-                       
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Collections Manager -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                             alt="Collections Manager" 
-                             class="w-full h-48 object-cover">
-                       
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-black mb-2">Collections Manager</h3>
-                        <p class="text-gray-600 mb-4">Manage recovery processes and maintain healthy loan portfolios.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            <span>Chennai, Tamil Nadu</span>
-                        </div>
-                       
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Digital Marketing Specialist -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
-                             alt="Digital Marketing" 
-                             class="w-full h-48 object-cover">
-                       
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-black mb-2">Digital Marketing Specialist</h3>
-                        <p class="text-gray-600 mb-4">Drive customer acquisition through digital marketing campaigns.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            <span>Hyderabad, Telangana</span>
-                        </div>
-                      
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Application Form Section -->
-    <section class="relative py-16 bg-gray-100 overflow-hidden" id="Apply">
-       
-        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header Section -->
-            <div class="text-center mb-16">
-               
-                <h2 class="text-4xl font-bold text-gray-800 mb-4 tracking-tight">
-                    Apply Now
-                    <span class="block text-lg font-normal text-gray-600 mt-2">Take the first step towards your new career</span>
-                </h2>
-                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
-            </div>
-
-            <!-- Form Container -->
-            <div class="relative">
-                <!-- Form Background Glow -->
-                <div class="absolute -inset-1 bg-gradient-to-r from-gray-200/50 to-gray-300/30 rounded-2xl blur-sm"></div>
-                
-                <div class="relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 sm:p-12 border border-gray-200/50">
-                    <form class="space-y-8">
-                        <!-- Personal Information Section -->
-                        <div class="space-y-6">
-                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
-                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-user text-primary text-sm"></i>
-                                </div>
-                                <h3 class="text-xl font-semibold text-gray-800">Personal Information</h3>
-                            </div>
-                            
-                            <!-- Name Fields -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="group">
-                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                        <i class="fas fa-user-circle text-primary mr-2"></i>
-                                        First Name
-                                    </label>
-                                    <input type="text" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="Enter your first name">
-                                </div>
-                                <div class="group">
-                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                        <i class="fas fa-user-circle text-primary mr-2"></i>
-                                        Last Name
-                                    </label>
-                                    <input type="text" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="Enter your last name">
-                                </div>
-                            </div>
-
-                            <!-- Contact Fields -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="group">
-                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                        <i class="fas fa-envelope text-primary mr-2"></i>
-                                        Email Address
-                                    </label>
-                                    <input type="email" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="your.email@example.com">
-                                </div>
-                                <div class="group">
-                                    <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                        <i class="fas fa-phone text-primary mr-2"></i>
-                                        Phone Number
-                                    </label>
-                                    <input type="tel" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 placeholder-gray-400" placeholder="+91 98765 43210">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Professional Information Section -->
-                        <div class="space-y-6">
-                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
-                                <div class="w-8 h-8 bg-blue-500/10 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-briefcase text-blue-500 text-sm"></i>
-                                </div>
-                                <h3 class="text-xl font-semibold text-gray-800">Professional Details</h3>
-                            </div>
-
-                            <!-- Position -->
-                            <div class="group">
-                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                    <i class="fas fa-user-tie text-primary mr-2"></i>
-                                    Position Applied For
-                                </label>
-                                <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 text-gray-700">
-                                    <option class="text-gray-400">Select Position</option>
-                                    <option>Senior Loan Officer</option>
-                                    <option>Credit Risk Analyst</option>
-                                    <option>Relationship Manager</option>
-                                    <option>Loan Processing Executive</option>
-                                    <option>Collections Manager</option>
-                                    <option>Digital Marketing Specialist</option>
-                                </select>
-                            </div>
-
-                            <!-- Experience -->
-                            <div class="group">
-                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                    <i class="fas fa-chart-line text-primary mr-2"></i>
-                                    Experience Level
-                                </label>
-                                <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 text-gray-700">
-                                    <option class="text-gray-400">Select Experience</option>
-                                    <option>0-1 years (Fresher)</option>
-                                    <option>1-3 years (Junior Level)</option>
-                                    <option>3-5 years (Mid Level)</option>
-                                    <option>5-10 years (Senior Level)</option>
-                                    <option>10+ years (Executive Level)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Additional Information Section -->
-                        <div class="space-y-6">
-                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
-                                <div class="w-8 h-8 bg-green-500/10 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-file-alt text-green-500 text-sm"></i>
-                                </div>
-                                <h3 class="text-xl font-semibold text-gray-800">Additional Information</h3>
-                            </div>
-
-                            <!-- Cover Letter -->
-                            <div class="group">
-                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                    <i class="fas fa-pen-fancy text-primary mr-2"></i>
-                                    Cover Letter
-                                </label>
-                                <textarea rows="5" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all duration-300 group-hover:border-gray-300 bg-gray-50/50 resize-none placeholder-gray-400" placeholder="Tell us why you're the perfect fit for this role..."></textarea>
-                            </div>
-
-                            <!-- Upload Resume -->
-                            <div class="group">
-                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                                    <i class="fas fa-cloud-upload-alt text-primary mr-2"></i>
-                                    Upload Resume
-                                </label>
-                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-primary hover:bg-primary/5 transition-all duration-300 cursor-pointer group-hover:border-primary/50">
-                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                                        <i class="fas fa-cloud-upload-alt text-lg text-primary"></i>
-                                    </div>
-                                    <p class="text-sm font-medium text-gray-700 mb-1">Drag and drop your resume here</p>
-                                    <p class="text-xs text-gray-500 mb-2">or <span class="text-primary font-semibold hover:underline">click to browse files</span></p>
-                                    <div class="flex items-center justify-center space-x-3 text-xs text-gray-400">
-                                        <span class="flex items-center"><i class="fas fa-file-pdf mr-1"></i> PDF</span>
-                                        <span class="flex items-center"><i class="fas fa-file-word mr-1"></i> DOC</span>
-                                        <span>Max 2MB</span>
-                                    </div>
-                                    <input type="file" class="hidden" accept=".pdf,.doc,.docx">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="pt-8">
-                            <button type="submit" class="w-full bg-gradient-to-r from-primary to-red-600 text-white py-4 rounded-xl font-semibold text-lg hover:from-red-600 hover:to-primary transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:ring-4 focus:ring-primary/30 flex items-center justify-center space-x-3 group">
-                                <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform duration-300"></i>
-                                <span>Submit Application</span>
-                                <div class="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin hidden group-hover:block"></div>
-                            </button>
-                            
-                            <p class="text-center text-sm text-gray-500 mt-4">
-                                <i class="fas fa-shield-alt text-green-500 mr-1"></i>
-                                Your information is secure and confidential
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Bottom Decoration -->
-            <div class="text-center mt-12">
-               
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-  <footer class="bg-black text-white py-10">
+<!-- Open Positions Section -->
+<section id="join" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      
-      <!-- Logo and Description -->
-      <div class="flex flex-col items-center md:items-start">
-        <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
-          <div class="text-4xl font-bold">
-            <span class="text-white">VY</span>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold text-white">Vahan</h3>
-            <h3 class="text-2xl font-bold text-white -mt-2">Yojana</h3>
-          </div>
-        </div>
-        <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
-          Shiksh Gravity Foundation, the parent company of VahanYojana,
-          presents this innovative platform. Explore our diverse inventory,
-          and let us guide you towards finding the perfect ride to fuel your
-          adventures.
-        </p>
-      </div>
-
-      <!-- Company Links -->
-      <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Company</h4>
-        <ul class="space-y-3 text-gray-300">
-          <li><a href="About.html" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
-          <li><a href="tearm&condition.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
-          <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-          <li><a href="joinus.html" class="hover:text-white transition-colors">Join Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Information -->
-      <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-white">Contact us</h4>
-        <div class="space-y-4 text-gray-300 max-w-sm">
-          <div class="flex items-start justify-center md:justify-start space-x-3">
-            <i class="fas fa-map-marker-alt text-white mt-1"></i>
-            <p class="leading-relaxed">
-              Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
-              30 - By Pass Cardanibagh, Anishabad, Patna(800002)
-            </p>
-          </div>
-          <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-phone text-white"></i>
-            <p>011-6931-3444</p>
-          </div>
-          <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-envelope text-white"></i>
-            <p>info@vahanyojana.com</p>
-          </div>
-        </div>
-
-        <!-- Social Links -->
-        <div class="flex flex-col items-center md:items-start text-gray-300 py-4">
-          <div class="flex items-center space-x-1">
-            <span class="text-sm">FOLLOW US</span>
-            <div class="w-8 h-px bg-gray-300 mx-2"></div>
-          </div>
-          <div class="flex space-x-3 mt-2">
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-facebook-f text-black text-sm"></i>
-            </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-instagram text-black text-sm"></i>
-            </a>
-            <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <i class="fab fa-youtube text-black text-sm"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primaryBlue mb-4">Open Positions</h2>
+      <p class="text-xl text-gray-700">Find your perfect role in our growing team</p>
     </div>
 
-    <!-- Copyright -->
-    <div class="border-t border-gray-700 mt-8 pt-6 text-center">
-      <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Position Card -->
+      <div class="bg-primaryWhite rounded-lg overflow-hidden shadow">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2070&q=80" alt="Loan Officer"
+            class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primaryBlue mb-2">Senior Loan Officer</h3>
+          <p class="text-gray-600 mb-4">Evaluate loan applications and guide customers through the approval process.</p>
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Mumbai, Maharashtra</span>
+          </div>
+          <button class="w-full bg-primaryYellow text-primaryBlack py-2 rounded-lg font-semibold hover:bg-primaryRed  hover:text-white transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Position Card -->
+      <div class="bg-primaryWhite rounded-lg overflow-hidden shadow">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2070&q=80" alt="Credit Analyst"
+            class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primaryBlue mb-2">Credit Risk Analyst</h3>
+          <p class="text-gray-600 mb-4">Assess creditworthiness and manage risk for loan applications.</p>
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Delhi, NCR</span>
+          </div>
+          <button class="w-full bg-primaryYellow text-primaryBlack py-2 rounded-lg font-semibold hover:bg-primaryRed  hover:text-white transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Position Card -->
+      <div class="bg-primaryWhite rounded-lg overflow-hidden shadow">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2069&q=80" alt="Relationship Manager"
+            class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primaryBlue mb-2">Relationship Manager</h3>
+          <p class="text-gray-600 mb-4">Build and maintain relationships with customers and car dealers.</p>
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Bangalore, Karnataka</span>
+          </div>
+          <button class="w-full bg-primaryYellow text-primaryBlack py-2 rounded-lg font-semibold hover:bg-primaryRed  hover:text-white transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Position Card -->
+      <div class="bg-primaryWhite rounded-lg overflow-hidden shadow">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2070&q=80" alt="Loan Processing"
+            class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primaryBlue mb-2">Loan Processing Executive</h3>
+          <p class="text-gray-600 mb-4">Handle loan documentation and ensure smooth processing workflows.</p>
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Pune, Maharashtra</span>
+          </div>
+          <button class="w-full bg-primaryYellow text-primaryBlack py-2 rounded-lg font-semibold hover:bg-primaryRed  hover:text-white transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Position Card -->
+      <div class="bg-primaryWhite rounded-lg overflow-hidden shadow">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2070&q=80" alt="Collections Manager"
+            class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primaryBlue mb-2">Collections Manager</h3>
+          <p class="text-gray-600 mb-4">Manage recovery processes and maintain healthy loan portfolios.</p>
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Chennai, Tamil Nadu</span>
+          </div>
+          <button class="w-full bg-primaryYellow text-primaryBlack py-2 rounded-lg font-semibold hover:bg-primaryRed  hover:text-white transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Position Card -->
+      <div class="bg-primaryWhite rounded-lg overflow-hidden shadow">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2015&q=80" alt="Digital Marketing"
+            class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primaryBlue mb-2">Digital Marketing Specialist</h3>
+          <p class="text-gray-600 mb-4">Drive customer acquisition through digital marketing campaigns.</p>
+          <div class="flex items-center text-sm text-gray-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <button class="w-full bg-primaryYellow text-primaryBlack py-2 rounded-lg font-semibold hover:bg-primaryRed hover:text-white transition-colors">
+            Apply Now
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
-     <script src="aap.js"></script>
-  </body>
+</section>
+
+
+  <!-- Application Form Section -->
+<section class="relative py-16 bg-primaryWhite overflow-hidden" id="Apply">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header Section -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primaryBlue mb-4 tracking-tight">
+        Apply Now
+        <span class="block text-lg font-normal text-gray-600 mt-2">
+          Take the first step towards your new career
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-primaryYellow mx-auto rounded-full"></div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="relative">
+      <!-- Form Background Glow -->
+      <div class="absolute -inset-1 bg-gradient-to-r from-primaryBlue/10 to-primaryBlue/5 rounded-2xl blur-sm"></div>
+
+      <div class="relative bg-white backdrop-blur-sm rounded-2xl shadow-lg p-8 sm:p-12 border border-gray-200/50">
+        <form class="space-y-8">
+          <!-- Personal Information Section -->
+          <div class="space-y-6">
+            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+              <div class="w-8 h-8 bg-primaryBlue/10 rounded-full flex items-center justify-center">
+                <i class="fas fa-user text-primaryBlue text-sm"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-primaryBlue">Personal Information</h3>
+            </div>
+
+            <!-- Name Fields -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                  <i class="fas fa-user-circle text-primaryBlue mr-2"></i>
+                  First Name
+                </label>
+                <input type="text"
+                  class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 placeholder-gray-400"
+                  placeholder="Enter your first name">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                  <i class="fas fa-user-circle text-primaryBlue mr-2"></i>
+                  Last Name
+                </label>
+                <input type="text"
+                  class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 placeholder-gray-400"
+                  placeholder="Enter your last name">
+              </div>
+            </div>
+
+            <!-- Contact Fields -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                  <i class="fas fa-envelope text-primaryBlue mr-2"></i>
+                  Email Address
+                </label>
+                <input type="email"
+                  class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 placeholder-gray-400"
+                  placeholder="your.email@example.com">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                  <i class="fas fa-phone text-primaryBlue mr-2"></i>
+                  Phone Number
+                </label>
+                <input type="tel"
+                  class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 placeholder-gray-400"
+                  placeholder="+91 98765 43210">
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Information Section -->
+          <div class="space-y-6">
+            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+              <div class="w-8 h-8 bg-primaryBlue/10 rounded-full flex items-center justify-center">
+                <i class="fas fa-briefcase text-primaryBlue text-sm"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-primaryBlue">Professional Details</h3>
+            </div>
+
+            <!-- Position -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                <i class="fas fa-user-tie text-primaryBlue mr-2"></i>
+                Position Applied For
+              </label>
+              <select
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 text-gray-700">
+                <option class="text-gray-400">Select Position</option>
+                <option>Senior Loan Officer</option>
+                <option>Credit Risk Analyst</option>
+                <option>Relationship Manager</option>
+                <option>Loan Processing Executive</option>
+                <option>Collections Manager</option>
+                <option>Digital Marketing Specialist</option>
+              </select>
+            </div>
+
+            <!-- Experience -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                <i class="fas fa-chart-line text-primaryBlue mr-2"></i>
+                Experience Level
+              </label>
+              <select
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 text-gray-700">
+                <option class="text-gray-400">Select Experience</option>
+                <option>0-1 years (Fresher)</option>
+                <option>1-3 years (Junior Level)</option>
+                <option>3-5 years (Mid Level)</option>
+                <option>5-10 years (Senior Level)</option>
+                <option>10+ years (Executive Level)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Information Section -->
+          <div class="space-y-6">
+            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+              <div class="w-8 h-8 bg-primaryBlue/10 rounded-full flex items-center justify-center">
+                <i class="fas fa-file-alt text-primaryBlue text-sm"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-primaryBlue">Additional Information</h3>
+            </div>
+
+            <!-- Cover Letter -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                <i class="fas fa-pen-fancy text-primaryBlue mr-2"></i>
+                Cover Letter
+              </label>
+              <textarea rows="5"
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-primaryBlue/20 focus:border-primaryBlue transition-all duration-300 bg-gray-50/50 resize-none placeholder-gray-400"
+                placeholder="Tell us why you're the perfect fit for this role..."></textarea>
+            </div>
+
+            <!-- Upload Resume -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                <i class="fas fa-cloud-upload-alt text-primaryBlue mr-2"></i>
+                Upload Resume
+              </label>
+              <div
+                class="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-primaryBlue hover:bg-primaryBlue/5 transition-all duration-300 cursor-pointer">
+                <div class="w-10 h-10 bg-primaryBlue/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <i class="fas fa-cloud-upload-alt text-lg text-primaryBlue"></i>
+                </div>
+                <p class="text-sm font-medium text-gray-700 mb-1">Drag and drop your resume here</p>
+                <p class="text-xs text-gray-500 mb-2">
+                  or <span class="text-primaryBlue font-semibold hover:underline">click to browse files</span>
+                </p>
+                <div class="flex items-center justify-center space-x-3 text-xs text-gray-400">
+                  <span class="flex items-center"><i class="fas fa-file-pdf mr-1"></i> PDF</span>
+                  <span class="flex items-center"><i class="fas fa-file-word mr-1"></i> DOC</span>
+                  <span>Max 2MB</span>
+                </div>
+                <input type="file" class="hidden" accept=".pdf,.doc,.docx">
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-8">
+            <button type="submit"
+              class="w-full bg-primaryYellow text-primaryBlack py-4 rounded-xl font-semibold text-lg hover:bg-primaryRed hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-3">
+              <i class="fas fa-paper-plane"></i>
+              <span>Submit Application</span>
+            </button>
+            <p class="text-center text-sm text-gray-500 mt-4">
+              <i class="fas fa-shield-alt text-green-500 mr-1"></i>
+              Your information is secure and confidential
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-primaryBlue text-primaryWhite py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+        <!-- Logo and Description -->
+        <div class="flex flex-col items-center md:items-start">
+          <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
+            <div class="text-4xl font-bold">
+              <span class="text-primaryYellow">VY</span>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-primaryWhite">Vahan</h3>
+              <h3 class="text-2xl font-bold text-primaryWhite -mt-2">Yojana</h3>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
+            Shiksh Gravity Foundation, the parent company of VahanYojana,
+            presents this innovative platform. Explore our diverse inventory,
+            and let us guide you towards finding the perfect ride to fuel your
+            adventures.
+          </p>
+        </div>
+
+        <!-- Company Links -->
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Company</h4>
+          <ul class="space-y-3 text-gray-300">
+            <li><a href="About.html" class="hover:text-primaryYellow transition-colors">About Us</a></li>
+            <li><a href="#contact" class="hover:text-primaryYellow transition-colors">Contact</a></li>
+            <li><a href="services.html" class="hover:text-primaryYellow transition-colors">Services</a></li>
+            <li><a href="tearm&condition.html" class="hover:text-primaryYellow transition-colors">Terms & Conditions</a>
+            </li>
+            <li><a href="privacy.html" class="hover:text-primaryYellow transition-colors">Privacy Policy</a></li>
+            <li><a href="joinus.html" class="hover:text-primaryYellow transition-colors">Join Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Contact Us</h4>
+          <div class="space-y-4 text-gray-300 max-w-sm">
+            <div class="flex items-start justify-center md:justify-start space-x-3">
+              <i class="fas fa-map-marker-alt text-primaryYellow mt-1"></i>
+              <p class="leading-relaxed">
+                Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
+                30 - By Pass Cardanibagh, Anishabad, Patna (800002)
+              </p>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <i class="fas fa-phone text-primaryYellow"></i>
+              <p>011-6931-3444</p>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <i class="fas fa-envelope text-primaryYellow"></i>
+              <p>info@vahanyojana.com</p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex flex-col items-center md:items-start text-gray-300 py-4">
+            <div class="flex items-center space-x-1">
+              <span class="text-sm">FOLLOW US</span>
+              <div class="w-8 h-px bg-gray-300 mx-2"></div>
+            </div>
+            <div class="flex space-x-3 mt-2">
+              <a href="#"
+                class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+                <i class="fab fa-facebook-f text-primaryBlue text-sm"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+                <i class="fab fa-instagram text-primaryBlue text-sm"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+                <i class="fab fa-youtube text-primaryBlue text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-500 mt-8 pt-6 text-center">
+        <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="aap.js"></script>
+</body>
+
 </html>
-        
