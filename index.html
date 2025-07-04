@@ -1,896 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vahan Yojana - Car Loans Made Easy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-   <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primaryYellow: "#EFB11E",
-          primaryRed: "#AC1F23",
-          primaryBlue: "#1E427F",
-          primaryBlack: "#191308",
-          primaryWhite: "#F7F7FF",
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vahan Yojana - Car Loans Made Easy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryYellow: "#EFB11E",
+            primaryRed: "#AC1F23",
+            primaryBlue: "#1E427F",
+            primaryBlack: "#191308",
+            primaryWhite: "#F7F7FF",
+          }
         }
       }
     }
-  }
-</script>
+  </script>
 
 
-    
-  </head>
-  <body class="bg-white">
-    <!-- Navigation -->
- <nav class="bg-primaryWhite shadow-lg sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center py-4">
-      <!-- Logo -->
-      <a href="#home" class="flex items-center space-x-3">
-        <img
-          src="logo-02.png"
-          alt="Logo"
-          class="h-12 w-auto object-contain"
-        />
-      </a>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Home</a>
-        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">About Us</a>
-        <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Services</a>
-        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Join Us</a>
-        <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Contact Us</a>
-        <a
-  href="login.html"
-  class="border border-primaryYellow text-primaryYellow px-6 py-2 rounded-full font-semibold hover:bg-primaryYellow hover:text-primaryBlack shadow-sm transition duration-300 ease-in-out"
->
-  Login
-</a>
+</head>
 
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav class="bg-primaryWhite shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center space-x-3">
+          <img src="logo-02.png" alt="Logo" class="h-12 w-auto object-contain" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Home</a>
+          <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">About Us</a>
+          <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Services</a>
+          <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Join Us</a>
+          <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium transition">Contact Us</a>
+          <a href="login.html"
+            class="border border-primaryYellow text-primaryYellow px-6 py-2 rounded-full font-semibold hover:bg-primaryYellow hover:text-primaryBlack shadow-sm transition duration-300 ease-in-out">
+            Login
+          </a>
+
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-primaryBlack hover:text-primaryYellow">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
       </div>
 
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button id="mobile-menu-btn" class="text-primaryBlack hover:text-primaryYellow">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pb-4">
-      <div class="flex flex-col space-y-4">
-        <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Home</a>
-        <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium">About Us</a>
-        <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium">Services</a>
-        <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Join Us</a>
-        <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium">Contact Us</a>
-        <a href="login.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Login</a>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col space-y-4">
+          <a href="index.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Home</a>
+          <a href="About.html" class="text-primaryBlack hover:text-primaryYellow font-medium">About Us</a>
+          <a href="#service" class="text-primaryBlack hover:text-primaryYellow font-medium">Services</a>
+          <a href="joinus.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Join Us</a>
+          <a href="#contact" class="text-primaryBlack hover:text-primaryYellow font-medium">Contact Us</a>
+          <a href="login.html" class="text-primaryBlack hover:text-primaryYellow font-medium">Login</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Hero Section -->
-<section id="home" class="relative h-[calc(100vh-4rem)]">
-  <div class="slider-container h-full">
-    <div class="slider-track h-full" id="slider-track">
-      <!-- Slide 1 -->
-      <div
-        class="slider-slide h-full bg-cover bg-center flex items-center justify-center"
-        style="
+  <section id="home" class="relative h-[calc(100vh-4rem)]">
+    <div class="slider-container h-full">
+      <div class="slider-track h-full" id="slider-track">
+        <!-- Slide 1 -->
+        <div class="slider-slide h-full bg-cover bg-center flex items-center justify-center" style="
           background-image: url('https://img.freepik.com/free-psd/black-isolated-car_23-2151852894.jpg');
           background-color: rgba(25, 19, 8, 0.6);
           background-blend-mode: overlay;
         ">
-        <div class="text-center text-primaryWhite max-w-5xl mx-auto px-4">
-          <!-- Hero Content -->
+          <div class="text-center text-primaryWhite max-w-5xl mx-auto px-4">
+            <!-- Hero Content -->
+          </div>
         </div>
-      </div>
 
-      <!-- Slide 2 -->
-      <div
-  class="slider-slide h-full bg-cover bg-center flex items-center justify-center"
-  style="
+        <!-- Slide 2 -->
+        <div class="slider-slide h-full bg-cover bg-center flex items-center justify-center" style="
     background-image: url('./assets/heroimg.png');
     background-color: rgba(25, 19, 8, 0.6);
     background-blend-mode: overlay;
   ">
-  <div class="text-center text-primaryWhite max-w-5xl mx-auto px-4">
-    <!-- Hero Content -->
-  </div>
-</div>
+          <div class="text-center text-primaryWhite max-w-5xl mx-auto px-4">
+            <!-- Hero Content -->
+          </div>
+        </div>
 
 
-      <!-- Slide 3 -->
-      <div
-        class="slider-slide h-full bg-cover bg-center flex items-center justify-center"
-        style="
+        <!-- Slide 3 -->
+        <div class="slider-slide h-full bg-cover bg-center flex items-center justify-center" style="
           background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=700&fit=crop');
           background-color: rgba(25, 19, 8, 0.6);
           background-blend-mode: overlay;
         ">
-        <div class="text-center text-primaryWhite max-w-5xl mx-auto px-4">
-          <!-- Hero Content -->
+          <div class="text-center text-primaryWhite max-w-5xl mx-auto px-4">
+            <!-- Hero Content -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Slider Navigation Dots -->
-  <div
-    class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3"
-  >
-    <button class="slider-dot w-3 h-3 rounded-full bg-primaryYellow opacity-80 hover:opacity-100 transition-opacity active" data-slide="0"></button>
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity" data-slide="1"></button>
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity" data-slide="2"></button>
-  </div>
-</section>
+    <!-- Slider Navigation Dots -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      <button
+        class="slider-dot w-3 h-3 rounded-full bg-primaryYellow opacity-80 hover:opacity-100 transition-opacity active"
+        data-slide="0"></button>
+      <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"
+        data-slide="1"></button>
+      <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"
+        data-slide="2"></button>
+    </div>
+  </section>
 
 
 
-    <!-- About Section -->
-<section id="about" class="py-12 bg-primaryWhite">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <!-- Image -->
-      <div>
-        <img
-          src="https://img.freepik.com/free-photo/young-couple-talking-sales-person-car-showroom_1303-20443.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
-          alt="Car Finance"
-          class="rounded-lg shadow-lg w-full h-96 object-cover"
-        />
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-primaryWhite">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/young-couple-talking-sales-person-car-showroom_1303-20443.jpg?ga=GA1.1.1284333705.1725910237&semt=ais_hybrid&w=740"
+            alt="Car Finance" class="rounded-lg shadow-lg w-full h-96 object-cover" />
+        </div>
+        <!-- Content -->
+        <div>
+          <h2 class="text-4xl font-bold text-primaryBlue mb-6">
+            वाहन योजना के बारे में
+          </h2>
+          <p class="text-lg text-primaryBlack mb-6">
+            वाहन योजना भारत का अग्रणी कार फाइनेंसिंग प्लेटफ़ॉर्म है, जो हर व्यक्ति के लिए कार स्वामित्व को सुलभ और
+            किफ़ायती बनाने के लिए समर्पित है। ऑटोमोबाइल फाइनेंस क्षेत्र में एक दशक से अधिक के अनुभव के साथ, हमने हज़ारों
+            ग्राहकों को अपनी कार का सपना पूरा करने में मदद की है।
+          </p>
+          <p class="text-lg text-primaryBlack mb-6">
+            हमारा मिशन है कि हम प्रतिस्पर्धी ब्याज दरों, न्यूनतम दस्तावेज़ीकरण और तेज़ स्वीकृति प्रक्रिया के साथ
+            झंझट-रहित कार लोन प्रदान करें। हमारा विश्वास है कि हर किसी को अपनी पसंदीदा कार चलाने का हक़ है, और हम उसे
+            संभव बनाने के लिए यहाँ हैं।
+
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primaryYellow mb-2">50,000+</div>
+              <div class="text-primaryBlack">Happy Customers</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primaryYellow mb-2">₹500 Cr+</div>
+              <div class="text-primaryBlack">Loans Disbursed</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Content -->
-      <div>
-        <h2 class="text-4xl font-bold text-primaryBlue mb-6">
-          About Vahan Yojana
+    </div>
+  </section>
+
+
+  <!-- Services Overview -->
+  <section class="py-12 bg-White" id="service">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-primaryBlue mb-4">
+          हमारी कार फ़ाइनेंस सेवाओं का अन्वेषण करें
         </h2>
-        <p class="text-lg text-primaryBlack mb-6">
-          Vahan Yojana is India's leading car financing platform, dedicated
-          to making car ownership accessible and affordable for everyone.
-          With over a decade of experience in the automotive finance sector,
-          we have helped thousands of customers fulfill their dream of
-          owning a car.
+        <p class="text-lg text-primaryBlack max-w-2xl mx-auto">
+          अपने वाहन के लिए सबसे उपयुक्त फाइनेंसिंग विकल्प चुनें — चाहे वह एक नई कार हो, एक भरोसेमंद पुरानी गाड़ी, या
+          बेहतर दरों के लिए मौजूदा फाइनेंस को दोबारा व्यवस्थित करना हो।
         </p>
-        <p class="text-lg text-primaryBlack mb-6">
-          Our mission is to provide hassle-free car loans with competitive
-          interest rates, minimal documentation, and quick approval
-          processes. We believe that everyone deserves to drive their dream
-          car, and we're here to make that possible.
-        </p>
-        <div class="grid grid-cols-2 gap-6">
-          <div class="text-center">
-            <div class="text-3xl font-bold text-primaryYellow mb-2">50,000+</div>
-            <div class="text-primaryBlack">Happy Customers</div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- New Car Loans -->
+        <div
+          class="group bg-primaryWhite border-2 border-primaryBlue rounded-xl p-8 hover:shadow-md transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            class="bg-primaryYellow text-primaryBlack p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-car text-2xl"></i>
           </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-primaryYellow mb-2">₹500 Cr+</div>
-            <div class="text-primaryBlack">Loans Disbursed</div>
+          <h3 class="text-2xl font-bold text-primaryBlue mb-4">नई कार के लिए फाइनेंसिंग विकल्प</h3>
+          <p class="text-primaryBlack mb-6">
+            अपनी नई कार को फाइनेंस करें आकर्षक ब्याज दरों और लचीले भुगतान विकल्पों के साथ।
+          </p>
+          <ul class="space-y-3 text-primaryBlack mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              अधिकतम 90% तक फाइनेंसिंग
+
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              ब्याज दरें 6.5% से शुरू
+
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              अवधि अधिकतम 7 साल तक
+
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              पूर्वभुगतान पर कोई शुल्क नहीं
+            </li>
+          </ul>
+          <a href="services.html">
+            <button
+              class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-primaryWhite transition-colors">
+              और जानें
+            </button>
+          </a>
+        </div>
+
+        <!-- Used Car Loans -->
+        <div
+          class="group bg-primaryWhite border-2 border-primaryBlue rounded-xl p-8 hover:shadow-md transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            class="bg-primaryYellow text-primaryBlack p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-car-side text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-primaryBlue mb-4">पुरानी कार के लिए फाइनेंसिंग विकल्प</h3>
+          <p class="text-primaryBlack mb-6">
+            पूर्व-स्वामित्व वाली कारों के लिए पाएं फाइनेंसिंग — प्रतिस्पर्धी दरों और तेज़ प्रोसेसिंग के साथ।
+          </p>
+          <ul class="space-y-3 text-primaryBlack mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              अधिकतम 80% तक फाइनेंसिंग
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              5 साल तक पुरानी कारों के लिए
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              तेज़ मूल्यांकन प्रक्रिया
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              लचीले पुनर्भुगतान विकल्प
+            </li>
+          </ul>
+          <a href="services.html">
+            <button
+              class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-primaryWhite transition-colors">
+              और जानें
+            </button>
+          </a>
+        </div>
+
+        <!-- Car Refinancing -->
+        <div
+          class="group bg-primaryWhite border-2 border-primaryBlue rounded-xl p-8 hover:shadow-md transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            class="bg-primaryYellow text-primaryBlack p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-exchange-alt text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-primaryBlue mb-4">कार रीफ़ाइनेंसिंग</h3>
+          <p class="text-primaryBlack mb-6">
+            अपना मौजूदा कार फाइनेंस हमारे साथ ट्रांसफ़र करें और पाएं बेहतर ब्याज दरें और सुविधाजनक शर्तें।
+          </p>
+          <ul class="space-y-3 text-primaryBlack mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              कम ईएमआई विकल्प
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              टॉप-अप फाइनेंस सुविधा
+
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              नाममात्र प्रोसेसिंग शुल्क
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
+              तेज़ स्वीकृति प्रक्रिया
+            </li>
+          </ul>
+          <a href="services.html">
+            <button
+              class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-primaryWhite transition-colors">
+             और जानें
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features Section -->
+  <section class="py-12 bg-primaryWhite">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-primaryBlue mb-4">
+          वाहन योजना क्यों चुनें?
+        </h2>
+        <p class="text-xl text-primaryBlack">
+          हमारे ग्राहक-केंद्रित दृष्टिकोण के साथ फर्क महसूस करें
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Feature Item -->
+        <div class="text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+            <div class="text-4xl font-bold text-primaryYellow mb-2">24 hrs</div>
+            <div class="text-primaryBlack">Quick Approval</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+            <div class="text-4xl font-bold text-primaryYellow mb-2">6.5%</div>
+            <div class="text-primaryBlack">Interest Rate</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+            <div class="text-4xl font-bold text-primaryYellow mb-2">90%</div>
+            <div class="text-primaryBlack">Loan Amount</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+            <div class="text-4xl font-bold text-primaryYellow mb-2">7 yrs</div>
+            <div class="text-primaryBlack">Loan Tenure</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-    <!-- Services Overview -->
-<section class="py-12 bg-White" id="service">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-primaryBlue mb-4">
-        Explore Our Car Loan Services
-      </h2>
-      <p class="text-lg text-primaryBlack max-w-2xl mx-auto">
-        Choose the best financing option for your vehicle—whether it's a
-        brand-new car, a trusted used vehicle, or refinancing your existing
-        loan for better rates.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- New Car Loans -->
-      <div
-        class="group bg-primaryWhite border-2 border-primaryBlue rounded-xl p-8 hover:shadow-md transition-all duration-300 transform hover:-translate-y-2"
-      >
-        <div
-          class="bg-primaryYellow text-primaryBlack p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform"
-        >
-          <i class="fas fa-car text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primaryBlue mb-4">New Car Loans</h3>
-        <p class="text-primaryBlack mb-6">
-          Finance your brand new car with attractive interest rates and
-          flexible repayment.
-        </p>
-        <ul class="space-y-3 text-primaryBlack mb-6">
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Up to 90% financing
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Interest rates from 6.5%
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Tenure up to 7 years
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            No prepayment charges
-          </li>
-        </ul>
-        <a href="services.html">
-          <button
-            class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-primaryWhite transition-colors"
-          >
-            Learn More
-          </button>
-        </a>
+  <!-- Loan Calculator Section -->
+  <section id="calculator" class="py-12 bg-White">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-primaryBlue mb-4">मासिक भुगतान गणना करें</h2>
+        <p class="text-xl text-primaryBlack">
+अपनी मासिक ईएमआई की गणना करें और बजट की योजना बनाएं        </p>
       </div>
 
-      <!-- Used Car Loans -->
-      <div
-        class="group bg-primaryWhite border-2 border-primaryBlue rounded-xl p-8 hover:shadow-md transition-all duration-300 transform hover:-translate-y-2"
-      >
-        <div
-          class="bg-primaryYellow text-primaryBlack p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform"
-        >
-          <i class="fas fa-car-side text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primaryBlue mb-4">Used Car Loans</h3>
-        <p class="text-primaryBlack mb-6">
-          Get financing for pre-owned vehicles with competitive rates and
-          quick processing.
-        </p>
-        <ul class="space-y-3 text-primaryBlack mb-6">
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Up to 80% financing
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Cars up to 5 years old
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Quick valuation process
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Flexible repayment terms
-          </li>
-        </ul>
-        <a href="services.html">
-          <button
-            class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-primaryWhite transition-colors"
-          >
-            Learn More
-          </button>
-        </a>
-      </div>
-
-      <!-- Car Refinancing -->
-      <div
-        class="group bg-primaryWhite border-2 border-primaryBlue rounded-xl p-8 hover:shadow-md transition-all duration-300 transform hover:-translate-y-2"
-      >
-        <div
-          class="bg-primaryYellow text-primaryBlack p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform"
-        >
-          <i class="fas fa-exchange-alt text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primaryBlue mb-4">Car Refinancing</h3>
-        <p class="text-primaryBlack mb-6">
-          Switch your existing car loan to us and enjoy better rates and
-          terms.
-        </p>
-        <ul class="space-y-3 text-primaryBlack mb-6">
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Lower EMI options
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Top-up loan facility
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Minimal processing fee
-          </li>
-          <li class="flex items-center">
-            <i class="fas fa-check-circle text-primaryYellow mr-3"></i>
-            Quick approval process
-          </li>
-        </ul>
-        <a href="services.html">
-          <button
-            class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold hover:bg-primaryRed hover:text-primaryWhite transition-colors"
-          >
-            Learn More
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-   <!-- Features Section -->
-<section class="py-12 bg-primaryWhite">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-primaryBlue mb-4">
-        Why Choose Vahan Yojana?
-      </h2>
-      <p class="text-xl text-primaryBlack">
-        Experience the difference with our customer-centric approach
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Feature Item -->
-      <div class="text-center">
-        <div class="bg-white p-6 rounded-lg shadow-md mb-4">
-          <div class="text-4xl font-bold text-primaryYellow mb-2">24 hrs</div>
-          <div class="text-primaryBlack">Quick Approval</div>
-        </div>
-      </div>
-      <div class="text-center">
-        <div class="bg-white p-6 rounded-lg shadow-md mb-4">
-          <div class="text-4xl font-bold text-primaryYellow mb-2">6.5%</div>
-          <div class="text-primaryBlack">Interest Rate</div>
-        </div>
-      </div>
-      <div class="text-center">
-        <div class="bg-white p-6 rounded-lg shadow-md mb-4">
-          <div class="text-4xl font-bold text-primaryYellow mb-2">90%</div>
-          <div class="text-primaryBlack">Loan Amount</div>
-        </div>
-      </div>
-      <div class="text-center">
-        <div class="bg-white p-6 rounded-lg shadow-md mb-4">
-          <div class="text-4xl font-bold text-primaryYellow mb-2">7 yrs</div>
-          <div class="text-primaryBlack">Loan Tenure</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Loan Calculator Section -->
-<section id="calculator" class="py-12 bg-White">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-primaryBlue mb-4">EMI Calculator</h2>
-      <p class="text-xl text-primaryBlack">
-        Calculate your monthly EMI and plan your budget
-      </p>
-    </div>
-
-    <div class="max-w-4xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Loan Details -->
-        <div class="bg-primaryWhite p-8 rounded-lg">
-          <h3 class="text-2xl font-bold text-primaryBlue mb-6">Loan Details</h3>
-          <div class="space-y-6">
-            <div>
-              <label class="block text-sm font-medium text-primaryBlack mb-2"
-                >Loan Amount (₹)</label
-              >
-              <input
-                type="range"
-                id="loanAmount"
-                min="100000"
-                max="5000000"
-                value="1000000"
-                class="w-full"
-              />
-              <div class="flex justify-between text-sm text-primaryBlack mt-1">
-                <span>₹1L</span>
-                <span
-                  id="loanAmountValue"
-                  class="font-semibold text-primaryYellow"
-                  >₹10L</span
-                >
-                <span>₹50L</span>
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Loan Details -->
+          <div class="bg-primaryWhite p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primaryBlue mb-6">वित्तीय विवरण</h3>
+            <div class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium text-primaryBlack mb-2">फाइनेंस राशि (₹)</label>
+                <input type="range" id="loanAmount" min="100000" max="5000000" value="1000000" class="w-full" />
+                <div class="flex justify-between text-sm text-primaryBlack mt-1">
+                  <span>₹1L</span>
+                  <span id="loanAmountValue" class="font-semibold text-primaryYellow">₹10L</span>
+                  <span>₹50L</span>
+                </div>
               </div>
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-primaryBlack mb-2"
-                >Interest Rate (%)</label
-              >
-              <input
-                type="range"
-                id="interestRate"
-                min="6.5"
-                max="18"
-                value="8.5"
-                step="0.1"
-                class="w-full"
-              />
-              <div class="flex justify-between text-sm text-primaryBlack mt-1">
-                <span>6.5%</span>
-                <span
-                  id="interestRateValue"
-                  class="font-semibold text-primaryYellow"
-                  >8.5%</span
-                >
-                <span>18%</span>
+              <div>
+                <label class="block text-sm font-medium text-primaryBlack mb-2">ब्याज दर (%)</label>
+                <input type="range" id="interestRate" min="6.5" max="18" value="8.5" step="0.1" class="w-full" />
+                <div class="flex justify-between text-sm text-primaryBlack mt-1">
+                  <span>6.5%</span>
+                  <span id="interestRateValue" class="font-semibold text-primaryYellow">8.5%</span>
+                  <span>18%</span>
+                </div>
               </div>
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-primaryBlack mb-2"
-                >Loan Tenure (Years)</label
-              >
-              <input
-                type="range"
-                id="loanTenure"
-                min="1"
-                max="7"
-                value="5"
-                class="w-full"
-              />
-              <div class="flex justify-between text-sm text-primaryBlack mt-1">
-                <span>1 yr</span>
-                <span
-                  id="loanTenureValue"
-                  class="font-semibold text-primaryYellow"
-                  >5 yrs</span
-                >
-                <span>7 yrs</span>
+              <div>
+                <label class="block text-sm font-medium text-primaryBlack mb-2">अवधि (वर्षों में)</label>
+                <input type="range" id="loanTenure" min="1" max="7" value="5" class="w-full" />
+                <div class="flex justify-between text-sm text-primaryBlack mt-1">
+                  <span>1 yr</span>
+                  <span id="loanTenureValue" class="font-semibold text-primaryYellow">5 yrs</span>
+                  <span>7 yrs</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- EMI Breakdown -->
-        <div class="bg-White border border-primaryBlue p-8 rounded-lg">
-          <h3 class="text-2xl font-bold text-primaryBlue mb-6">EMI Breakdown</h3>
-          <div class="space-y-4">
-            <div
-              class="flex justify-between items-center py-3 border-b border-primaryBlue"
-            >
-              <span class="text-primaryBlack">Monthly EMI</span>
-              <span id="monthlyEMI" class="text-2xl font-bold text-primaryYellow"
-                >₹20,276</span
-              >
+          <!-- EMI Breakdown -->
+          <div class="bg-White border border-primaryBlue p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primaryBlue mb-6">मासिक भुगतान का विभाजन</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center py-3 border-b border-primaryBlue">
+                <span class="text-primaryBlack">मासिक ईएमआई</span>
+                <span id="monthlyEMI" class="text-2xl font-bold text-primaryYellow">₹20,276</span>
+              </div>
+              <div class="flex justify-between items-center py-3 border-b border-primaryBlue">
+                <span class="text-primaryBlack">कुल ब्याज राशि</span>
+                <span id="totalInterest" class="text-lg font-semibold text-primaryBlack">₹2,16,560</span>
+              </div>
+              <div class="flex justify-between items-center py-3 border-b border-primaryBlue">
+                <span class="text-primaryBlack">कुल राशि</span>
+                <span id="totalAmount" class="text-lg font-semibold text-primaryBlack">₹12,16,560</span>
+              </div>
             </div>
-            <div
-              class="flex justify-between items-center py-3 border-b border-primaryBlue"
-            >
-              <span class="text-primaryBlack">Total Interest</span>
-              <span
-                id="totalInterest"
-                class="text-lg font-semibold text-primaryBlack"
-                >₹2,16,560</span
-              >
-            </div>
-            <div
-              class="flex justify-between items-center py-3 border-b border-primaryBlue"
-            >
-              <span class="text-primaryBlack">Total Amount</span>
-              <span
-                id="totalAmount"
-                class="text-lg font-semibold text-primaryBlack"
-                >₹12,16,560</span
-              >
-            </div>
+            <button
+              class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold mt-6 hover:bg-primaryRed hover:text-primaryWhite transition-colors">
+इस सुविधा के लिए आवेदन करें            </button>
           </div>
-          <button
-            class="w-full bg-primaryYellow text-primaryBlack py-3 rounded-lg font-semibold mt-6 hover:bg-primaryRed hover:text-primaryWhite transition-colors"
-          >
-            Apply for This Loan
-          </button>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-    <section class="py-12 bg-primaryWhite relative overflow-hidden">
-  <!-- Decorative Quotation Marks -->
-  <div
-    class="hidden lg:block absolute top-10 left-10 text-6xl lg:text-9xl text-primaryYellow font-bold select-none opacity-10"
-  >
-    ❝
-  </div>
-  <div
-    class="hidden lg:block absolute bottom-10 right-10 text-6xl lg:text-9xl text-primaryYellow font-bold select-none opacity-10"
-  >
-    ❞
-  </div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <!-- Section Header -->
-    <div class="text-center mb-12 lg:mb-16">
-      <h2 class="text-3xl lg:text-4xl font-bold text-primaryBlue mb-4">
-        Happy Client Feedback
-      </h2>
-      <p
-        class="text-base sm:text-lg text-primaryBlack max-w-2xl mx-auto leading-relaxed"
-      >
-        Discover what our satisfied customers have to say about their experience with our vehicle financing services.
-      </p>
+  <section class="py-12 bg-primaryWhite relative overflow-hidden">
+    <!-- Decorative Quotation Marks -->
+    <div
+      class="hidden lg:block absolute top-10 left-10 text-6xl lg:text-9xl text-primaryYellow font-bold select-none opacity-10">
+      ❝
+    </div>
+    <div
+      class="hidden lg:block absolute bottom-10 right-10 text-6xl lg:text-9xl text-primaryYellow font-bold select-none opacity-10">
+      ❞
     </div>
 
-    <!-- Testimonial Container -->
-    <div class="relative max-w-6xl mx-auto">
-      <!-- Main testimonial display -->
-      <div
-        id="testimonial-container"
-        class="flex flex-col lg:flex-row items-center justify-center min-h-[400px] gap-6 lg:gap-16"
-      >
-        <!-- Client Image -->
-        <div class="flex-shrink-0 w-full lg:w-auto flex justify-center">
-          <div class="relative">
-            <img
-              id="client-image"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face"
-              alt="Client Photo"
-              class="w-40 h-50 sm:w-56 sm:h-72 lg:w-64 lg:h-80 object-cover rounded-lg shadow-lg"
-            />
-            <div
-              class="absolute bottom-0 left-0 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-primaryRed triangle-cut"
-            ></div>
-          </div>
-        </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-primaryBlue mb-4">
+संतुष्ट ग्राहकों की राय        </h2>
+        <p class="text-base sm:text-lg text-primaryBlack max-w-2xl mx-auto leading-relaxed">
+         जानिए हमारे संतुष्ट ग्राहकों ने हमारी वाहन फाइनेंसिंग सेवाओं के अनुभव के बारे में क्या कहा।
+        </p>
+      </div>
 
-        <!-- Testimonial Content -->
-        <div class="flex-1 w-full lg:max-w-2xl">
-          <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-md ">
-            <div class="mb-4 lg:mb-6">
-              <p
-                id="testimonial-text"
-                class="text-sm sm:text-base lg:text-lg xl:text-xl text-primaryBlack leading-relaxed mb-4 lg:mb-6"
-              >
-                मैं दीपनारायण राय मैंने वाहन प्रोजेक्ट से एक बाइक खरीदी हूं,
-                जो की मुझे 40% तक की छूट दी गयी है, और मैं इससे बहुत ही खुश हूं,
-                मैं वाहन प्रोजेक्ट को धन्यवाद करना चाहता हूं,
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <h4
-                    id="client-name"
-                    class="text-lg sm:text-xl font-bold text-primaryRed"
-                  >
-                    Deepnarayan Rai
-                  </h4>
-                  <p
-                    id="client-location"
-                    class="text-sm sm:text-base text-primaryBlack"
-                  >
-                    Vaishali, Hajipur
-                  </p>
+      <!-- Testimonial Container -->
+      <div class="relative max-w-6xl mx-auto">
+        <!-- Main testimonial display -->
+        <div id="testimonial-container"
+          class="flex flex-col lg:flex-row items-center justify-center min-h-[400px] gap-6 lg:gap-16">
+          <!-- Client Image -->
+          <div class="flex-shrink-0 w-full lg:w-auto flex justify-center">
+            <div class="relative">
+              <img id="client-image"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face"
+                alt="Client Photo"
+                class="w-40 h-50 sm:w-56 sm:h-72 lg:w-64 lg:h-80 object-cover rounded-lg shadow-lg" />
+              <div class="absolute bottom-0 left-0 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-primaryRed triangle-cut">
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Content -->
+          <div class="flex-1 w-full lg:max-w-2xl">
+            <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-md ">
+              <div class="mb-4 lg:mb-6">
+                <p id="testimonial-text"
+                  class="text-sm sm:text-base lg:text-lg xl:text-xl text-primaryBlack leading-relaxed mb-4 lg:mb-6">
+                  मैं दीपनारायण राय मैंने वाहन प्रोजेक्ट से एक बाइक खरीदी हूं,
+                  जो की मुझे 40% तक की छूट दी गयी है, और मैं इससे बहुत ही खुश हूं,
+                  मैं वाहन प्रोजेक्ट को धन्यवाद करना चाहता हूं,
+                </p>
+                <div class="flex items-center">
+                  <div>
+                    <h4 id="client-name" class="text-lg sm:text-xl font-bold text-primaryRed">
+                      Deepnarayan Rai
+                    </h4>
+                    <p id="client-location" class="text-sm sm:text-base text-primaryBlack">
+                      Vaishali, Hajipur
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Navigation Controls -->
-      <div class="flex justify-center mt-6 lg:mt-8">
-        <div class="flex space-x-2">
-          <button
-            class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-primaryYellow transition-colors"
-            data-index="0"
-          ></button>
-          <button
-            class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
-            data-index="1"
-          ></button>
-          <button
-            class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
-            data-index="2"
-          ></button>
-          <button
-            class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
-            data-index="3"
-          ></button>
-          <button
-            class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
-            data-index="4"
-          ></button>
+        <!-- Navigation Controls -->
+        <div class="flex justify-center mt-6 lg:mt-8">
+          <div class="flex space-x-2">
+            <button class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-primaryYellow transition-colors"
+              data-index="0"></button>
+            <button
+              class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
+              data-index="1"></button>
+            <button
+              class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
+              data-index="2"></button>
+            <button
+              class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
+              data-index="3"></button>
+            <button
+              class="dot-indicator w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-primaryYellow transition-colors"
+              data-index="4"></button>
+          </div>
+        </div>
+
+        <!-- Car decoration -->
+        <div class="hidden lg:block absolute -bottom-10 -right-10 opacity-10">
+          <svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="80" height="25" rx="5" fill="#1E427F" />
+            <rect x="5" y="35" width="15" height="15" rx="7.5" fill="#EFB11E" />
+            <rect x="80" y="35" width="15" height="15" rx="7.5" fill="#EFB11E" />
+            <rect x="25" y="15" width="30" height="15" rx="3" fill="#9ca3af" />
+            <rect x="60" y="25" width="15" height="8" rx="2" fill="#9ca3af" />
+          </svg>
         </div>
       </div>
-
-      <!-- Car decoration -->
-      <div class="hidden lg:block absolute -bottom-10 -right-10 opacity-10">
-        <svg
-          width="120"
-          height="60"
-          viewBox="0 0 120 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect x="10" y="20" width="80" height="25" rx="5" fill="#1E427F" />
-          <rect x="5" y="35" width="15" height="15" rx="7.5" fill="#EFB11E" />
-          <rect x="80" y="35" width="15" height="15" rx="7.5" fill="#EFB11E" />
-          <rect x="25" y="15" width="30" height="15" rx="3" fill="#9ca3af" />
-          <rect x="60" y="25" width="15" height="8" rx="2" fill="#9ca3af" />
-        </svg>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<script>
-  // Testimonial data
-  const testimonials = [
-    {
-      text: "मैं दीपनारायण राय मैंने वाहन प्रोजेक्ट से एक बाइक खरीदी हूं, जो की मुझे 40% तक की छूट दी गयी है, और मैं इससे बहुत ही खुश हूं, मैं वाहन प्रोजेक्ट को धन्यवाद करना चाहता हूं,",
-      name: "Deepnarayan Rai",
-      location: "Vaishali, Hajipur",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
-    },
-    {
-      text: "Amazing service! I got my dream car with excellent financing options. The team was very professional and helpful throughout the entire process.",
-      name: "Rajesh Kumar",
-      location: "Delhi, India",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
-    },
-    {
-      text: "Fast approval and great customer support. I highly recommend their services to anyone looking for vehicle financing.",
-      name: "Priya Sharma",
-      location: "Mumbai, Maharashtra",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop&crop=face",
-    },
-    {
-      text: "Excellent experience from start to finish. The documentation process was smooth and the team was very supportive.",
-      name: "Amit Singh",
-      location: "Pune, Maharashtra",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=400&fit=crop&crop=face",
-    },
-    {
-      text: "Best vehicle financing company! They made my car buying journey so easy and stress-free. Highly recommended!",
-      name: "Sunita Devi",
-      location: "Bangalore, Karnataka",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop&crop=face",
-    },
-  ];
+  <script>
+    // Testimonial data
+    const testimonials = [
+      {
+        text: "मैं दीपनारायण राय मैंने वाहन प्रोजेक्ट से एक बाइक खरीदी हूं, जो की मुझे 40% तक की छूट दी गयी है, और मैं इससे बहुत ही खुश हूं, मैं वाहन प्रोजेक्ट को धन्यवाद करना चाहता हूं,",
+        name: "Deepnarayan Rai",
+        location: "Vaishali, Hajipur",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
+      },
+      {
+        text: "Amazing service! I got my dream car with excellent financing options. The team was very professional and helpful throughout the entire process.",
+        name: "Rajesh Kumar",
+        location: "Delhi, India",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
+      },
+      {
+        text: "Fast approval and great customer support. I highly recommend their services to anyone looking for vehicle financing.",
+        name: "Priya Sharma",
+        location: "Mumbai, Maharashtra",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop&crop=face",
+      },
+      {
+        text: "Excellent experience from start to finish. The documentation process was smooth and the team was very supportive.",
+        name: "Amit Singh",
+        location: "Pune, Maharashtra",
+        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=400&fit=crop&crop=face",
+      },
+      {
+        text: "Best vehicle financing company! They made my car buying journey so easy and stress-free. Highly recommended!",
+        name: "Sunita Devi",
+        location: "Bangalore, Karnataka",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop&crop=face",
+      },
+    ];
 
-  let currentIndex = 0;
+    let currentIndex = 0;
 
-  // Update testimonial display
-  function updateTestimonial(index) {
-    const testimonial = testimonials[index];
-    document.getElementById("testimonial-text").textContent = testimonial.text;
-    document.getElementById("client-name").textContent = testimonial.name;
-    document.getElementById("client-location").textContent = testimonial.location;
-    document.getElementById("client-image").src = testimonial.image;
+    // Update testimonial display
+    function updateTestimonial(index) {
+      const testimonial = testimonials[index];
+      document.getElementById("testimonial-text").textContent = testimonial.text;
+      document.getElementById("client-name").textContent = testimonial.name;
+      document.getElementById("client-location").textContent = testimonial.location;
+      document.getElementById("client-image").src = testimonial.image;
 
-    // Update dot indicators
-    document.querySelectorAll(".dot-indicator").forEach((dot, i) => {
-      if (i === index) {
-        dot.classList.remove("bg-gray-300");
-        dot.classList.add("bg-primaryYellow");
-      } else {
-        dot.classList.remove("bg-primaryYellow");
-        dot.classList.add("bg-gray-300");
-      }
-    });
-  }
+      // Update dot indicators
+      document.querySelectorAll(".dot-indicator").forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.remove("bg-gray-300");
+          dot.classList.add("bg-primaryYellow");
+        } else {
+          dot.classList.remove("bg-primaryYellow");
+          dot.classList.add("bg-gray-300");
+        }
+      });
+    }
 
-  // Next testimonial
-  function nextTestimonial() {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateTestimonial(currentIndex);
-  }
-
-  // Dot indicators click
-  document.querySelectorAll(".dot-indicator").forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      currentIndex = index;
+    // Next testimonial
+    function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % testimonials.length;
       updateTestimonial(currentIndex);
+    }
+
+    // Dot indicators click
+    document.querySelectorAll(".dot-indicator").forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateTestimonial(currentIndex);
+      });
     });
-  });
 
-  // Auto-play
-  setInterval(nextTestimonial, 5000);
+    // Auto-play
+    setInterval(nextTestimonial, 5000);
 
-  // Initialize
-  updateTestimonial(0);
-</script>
+    // Initialize
+    updateTestimonial(0);
+  </script>
 
-    
-    <!-- Contact Section -->
-<div class="container mx-auto px-4 py-12" id="contact">
-  <h2
-    class="text-2xl sm:text-3xl font-bold text-primaryBlue mb-4 text-center"
-  >
-    Contact Us
-  </h2>
-  <p class="text-primaryBlack text-center mb-10 text-sm sm:text-base">
-    We would love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.
-  </p>
 
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
-    <!-- Map/Location Section -->
-    <div class="rounded-xl relative overflow-hidden min-h-[300px]">
-      <!-- Google Maps as Background -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.2409246451975!2d77.22089007614683!3d28.630062884439797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683f59c87%3A0x8e3d3c5c9e1a5e1a!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1702738345123!5m2!1sen!2sin"
-        class="absolute inset-0 w-full h-full rounded-xl"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+  <!-- Contact Section -->
+  <div class="container mx-auto px-4 py-12" id="contact">
+    <h2 class="text-2xl sm:text-3xl font-bold text-primaryBlue mb-4 text-center">
+      संपर्क करें
+    </h2>
+    <p class="text-primaryBlack text-center mb-10 text-sm sm:text-base">
+      हमें आपसे बात करके खुशी होगी! चाहे आपके पास कोई सवाल हो, सुझाव देना चाहें, या बस हमें नमस्ते कहना चाहते हों — बेहिचक संपर्क करें।
+    </p>
 
-      <!-- Location Info Overlay -->
-      <div
-        class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-md max-w-xs"
-      >
-        <h3 class="text-primaryBlue font-semibold text-base mb-3">
-          Our Office Location
-        </h3>
-        <div class="space-y-1 text-xs text-primaryBlack">
-          <p><strong>ADDRESS:</strong></p>
-          <p>Connaught Place, New Delhi,</p>
-          <p>Delhi 110001, India</p>
-          <p><strong>EMAIL:</strong> info@company.com</p>
-          <p><strong>PHONE:</strong> +91 9876543210</p>
-          <p><strong>Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <!-- Map/Location Section -->
+      <div class="rounded-xl relative overflow-hidden min-h-[300px]">
+        <!-- Google Maps as Background -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.2409246451975!2d77.22089007614683!3d28.630062884439797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683f59c87%3A0x8e3d3c5c9e1a5e1a!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1702738345123!5m2!1sen!2sin"
+          class="absolute inset-0 w-full h-full rounded-xl" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Location Info Overlay -->
+        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-md max-w-xs">
+          <h3 class="text-primaryBlue font-semibold text-base mb-3">
+            Our Office Location
+          </h3>
+          <div class="space-y-1 text-xs text-primaryBlack">
+            <p><strong>पता:</strong></p>
+            <p>Connaught Place, New Delhi,</p>
+            <p>Delhi 110001, India</p>
+            <p><strong>ईमेल:</strong> info@company.com</p>
+            <p><strong>फ़ोन::</strong> +91 9876543210</p>
+            <p><strong>समय:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Contact Form -->
-    <div class="bg-white rounded-xl p-6 shadow-md ">
-      <h3 class="text-xl text-primaryBlue mb-4">Get In Touch</h3>
-      <p class="text-primaryBlack mb-4 text-sm">
-        Have questions? Reach out to us and we'll be happy to help!
-      </p>
-
-      <form class="space-y-3">
-        <div>
-          <label class="block text-sm font-medium text-primaryBlack mb-1">
-            Name
-          </label>
-          <input
-            type="text"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryBlue focus:border-transparent transition-all duration-200 text-sm"
-          />
-        </div>
-
-        <div>
-          <label class="block text-sm font-medium text-primaryBlack mb-1">
-            Email
-          </label>
-          <input
-            type="email"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryBlue focus:border-transparent transition-all duration-200 text-sm"
-          />
-        </div>
-
-        <div>
-          <label class="block text-sm font-medium text-primaryBlack mb-1">
-            Message
-          </label>
-          <textarea
-            rows="3"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryBlue focus:border-transparent transition-all duration-200 resize-none text-sm"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          class="w-full bg-primaryYellow hover:bg-primaryRed text-primaryBlack py-3 px-5 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-md text-sm"
-        >
-          Send Message
-        </button>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          We aim to respond within 24 hours. Thank you for contacting us!
+      <!-- Contact Form -->
+      <div class="bg-white rounded-xl p-6 shadow-md ">
+        <h3 class="text-xl text-primaryBlue mb-4">Get In Touch</h3>
+        <p class="text-primaryBlack mb-4 text-sm">
+          कोई सवाल है? हमसे संपर्क करें, हम मदद करने के लिए हमेशा तैयार हैं!
         </p>
-      </form>
-    </div>
-  </div>
-</div>
 
-
-   <footer class="bg-primaryBlue text-primaryWhite py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-
-      <!-- Logo and Description -->
-      <div class="flex flex-col items-center md:items-start">
-        <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
-          <div class="text-4xl font-bold">
-            <span class="text-primaryYellow">VY</span>
-          </div>
+        <form class="space-y-3">
           <div>
-            <h3 class="text-2xl font-bold text-primaryWhite">Vahan</h3>
-            <h3 class="text-2xl font-bold text-primaryWhite -mt-2">Yojana</h3>
+            <label class="block text-sm font-medium text-primaryBlack mb-1">
+              नाम
+            </label>
+            <input type="text"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryBlue focus:border-transparent transition-all duration-200 text-sm" />
           </div>
-        </div>
-        <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
-          Shiksh Gravity Foundation, the parent company of VahanYojana,
-          presents this innovative platform. Explore our diverse inventory,
-          and let us guide you towards finding the perfect ride to fuel your
-          adventures.
-        </p>
+
+          <div>
+            <label class="block text-sm font-medium text-primaryBlack mb-1">
+             ईमेल
+            </label>
+            <input type="email"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryBlue focus:border-transparent transition-all duration-200 text-sm" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-primaryBlack mb-1">
+              संदेश
+            </label>
+            <textarea rows="3"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryBlue focus:border-transparent transition-all duration-200 resize-none text-sm"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-primaryYellow hover:bg-primaryRed text-primaryBlack py-3 px-5 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-md text-sm">
+            जमा करें
+          </button>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            हमारे विविध वाहन विकल्पों को एक्सप्लोर करें, और अपनी अगली यात्रा के लिए उपयुक्त सवारी चुनने में हम आपकी मार्गदर्शना करेंगे।
+          </p>
+        </form>
       </div>
-
-      <!-- Company Links -->
-      <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Company</h4>
-        <ul class="space-y-3 text-gray-300">
-          <li><a href="About.html" class="hover:text-primaryYellow transition-colors">About Us</a></li>
-          <li><a href="#contact" class="hover:text-primaryYellow transition-colors">Contact</a></li>
-          <li><a href="services.html" class="hover:text-primaryYellow transition-colors">Services</a></li>
-          <li><a href="tearm&condition.html" class="hover:text-primaryYellow transition-colors">Terms & Conditions</a></li>
-          <li><a href="privacy.html" class="hover:text-primaryYellow transition-colors">Privacy Policy</a></li>
-          <li><a href="joinus.html" class="hover:text-primaryYellow transition-colors">Join Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Information -->
-      <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Contact Us</h4>
-        <div class="space-y-4 text-gray-300 max-w-sm">
-          <div class="flex items-start justify-center md:justify-start space-x-3">
-            <i class="fas fa-map-marker-alt text-primaryYellow mt-1"></i>
-            <p class="leading-relaxed">
-              Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
-              30 - By Pass Cardanibagh, Anishabad, Patna (800002)
-            </p>
-          </div>
-          <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-phone text-primaryYellow"></i>
-            <p>011-6931-3444</p>
-          </div>
-          <div class="flex items-center justify-center md:justify-start space-x-3">
-            <i class="fas fa-envelope text-primaryYellow"></i>
-            <p>info@vahanyojana.com</p>
-          </div>
-        </div>
-
-        <!-- Social Links -->
-        <div class="flex flex-col items-center md:items-start text-gray-300 py-4">
-          <div class="flex items-center space-x-1">
-            <span class="text-sm">FOLLOW US</span>
-            <div class="w-8 h-px bg-gray-300 mx-2"></div>
-          </div>
-          <div class="flex space-x-3 mt-2">
-            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
-              <i class="fab fa-facebook-f text-primaryBlue text-sm"></i>
-            </a>
-            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
-              <i class="fab fa-instagram text-primaryBlue text-sm"></i>
-            </a>
-            <a href="#" class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
-              <i class="fab fa-youtube text-primaryBlue text-sm"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="border-t border-gray-500 mt-8 pt-6 text-center">
-      <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
     </div>
   </div>
-</footer>
 
 
-    <script src="aap.js"></script>
-  </body>
+  <footer class="bg-primaryBlue text-primaryWhite py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+        <!-- Logo and Description -->
+        <div class="flex flex-col items-center md:items-start">
+          <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
+            <div class="text-4xl font-bold">
+              <span class="text-primaryYellow">VY</span>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-primaryWhite">Vahan</h3>
+              <h3 class="text-2xl font-bold text-primaryWhite -mt-2">Yojana</h3>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed max-w-sm">
+            हमारे विविध वाहन विकल्पों को एक्सप्लोर करें, और अपनी अगली यात्रा के लिए उपयुक्त सवारी चुनने में हम आपकी मार्गदर्शना करेंगे।
+          </p>
+        </div>
+
+        <!-- Company Links -->
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Company</h4>
+          <ul class="space-y-3 text-gray-300">
+            <li><a href="About.html" class="hover:text-primaryYellow transition-colors">About Us</a></li>
+            <li><a href="#contact" class="hover:text-primaryYellow transition-colors">Contact</a></li>
+            <li><a href="services.html" class="hover:text-primaryYellow transition-colors">Services</a></li>
+            <li><a href="tearm&condition.html" class="hover:text-primaryYellow transition-colors">Terms & Conditions</a>
+            </li>
+            <li><a href="privacy.html" class="hover:text-primaryYellow transition-colors">Privacy Policy</a></li>
+            <li><a href="joinus.html" class="hover:text-primaryYellow transition-colors">Join Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="text-lg font-semibold mb-6 text-primaryYellow">Contact Us</h4>
+          <div class="space-y-4 text-gray-300 max-w-sm">
+            <div class="flex items-start justify-center md:justify-start space-x-3">
+              <i class="fas fa-map-marker-alt text-primaryYellow mt-1"></i>
+              <p class="leading-relaxed">
+                Santswarup Complex / 2nd floor, Near Bank of Maharashtra, NH
+                30 - By Pass Cardanibagh, Anishabad, Patna (800002)
+              </p>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <i class="fas fa-phone text-primaryYellow"></i>
+              <p>011-6931-3444</p>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <i class="fas fa-envelope text-primaryYellow"></i>
+              <p>info@vahanyojana.com</p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex flex-col items-center md:items-start text-gray-300 py-4">
+            <div class="flex items-center space-x-1">
+              <span class="text-sm">FOLLOW US</span>
+              <div class="w-8 h-px bg-gray-300 mx-2"></div>
+            </div>
+            <div class="flex space-x-3 mt-2">
+              <a href="#"
+                class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+                <i class="fab fa-facebook-f text-primaryBlue text-sm"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+                <i class="fab fa-instagram text-primaryBlue text-sm"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-primaryWhite rounded-full flex items-center justify-center hover:bg-primaryYellow transition-colors">
+                <i class="fab fa-youtube text-primaryBlue text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-500 mt-8 pt-6 text-center">
+        <p class="text-gray-400">&copy; 2025 VahanYojana. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="aap.js"></script>
+</body>
+
 </html>
